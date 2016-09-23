@@ -1,0 +1,202 @@
+body {
+  padding-top: 51px;
+  font-family: "Oxygen", sans-serif;
+}
+.text-center {
+  padding-top: 20px;
+}
+.col-xs-12 {
+  background-color: #fff;
+}
+#sidebar {
+  height: 100%;
+  padding-right:0;
+  padding-top:20px;
+  margin-top: 20px;
+}
+#sidebar .nav {
+  width: 95%;
+  position: fixed; /* fixes the side navigaton in place */
+}
+#sidebar li {
+  border:0 solid;
+}
+
+#sidebar .nav li a{
+  color: #A9A9A9;
+  font-size: 12px;
+  padding-top:5px;
+  padding-bottom:5px;
+}
+
+#sidebar .nav li a:hover{
+  background-color: white;
+  color: black;
+}
+
+#sidebar.nav li a:active{
+  background-color: white;
+  color: black;
+}
+
+ul ul, ol ul {
+  list-style-type: none;
+}
+
+ul ul li a:hover{
+  text-decoration: none;
+}
+
+
+
+/* collapsible */
+@media screen and (max-width: 767px) {
+  .row-offcanvas {
+    position: relative;
+    -webkit-transition: all 0.25s ease-out;
+    -moz-transition: all 0.25s ease-out;
+    transition: all 0.25s ease-out;
+  }
+  .row-offcanvas-right
+  .sidebar-offcanvas {
+    right: -41.6%;
+  }
+
+  .row-offcanvas-left
+  .sidebar-offcanvas {
+    left: -41.6%;
+  }
+  .row-offcanvas-right.active {
+    right: 41.6%;
+  }
+  .row-offcanvas-left.active {
+    left: 41.6%;
+  }
+  .sidebar-offcanvas {
+    position: absolute;
+    top: 0;
+    width: 41.6%;
+  }
+  #sidebar {
+    padding-top:0;
+  }
+}
+
+.navbar-brand{
+  font-size: 24px;
+  font-weight: bold;
+}
+.navbar{
+  background-color: #FFFFFF;
+  border-width: 0px;
+  padding-top: 25px;
+  padding-left: 25px;
+}
+
+
+/* TEST GRID */
+#rig {
+    max-width:100%;
+    margin:0 auto; /*center aligned*/
+    padding:0;
+    font-size:0; /* Remember to change it back to normal font size if have captions */
+    list-style:none;
+    background-color:#ffffff;
+}
+#rig li {
+    display: inline-block;
+    *display:inline;/*for IE6 - IE7*/
+    width:25%;
+    vertical-align:middle;
+    box-sizing:border-box;
+    margin:20px;
+    padding:0;
+}
+.rig-text {
+    display:block;
+    padding:0 30px;
+    box-sizing:border-box;
+    position:absolute;
+    left:0;
+    width:100%;
+    text-align:center;
+    text-transform:capitalize;
+    font-size:18px;
+    top:40%;
+    color:white;
+    opacity:0;
+    filter:alpha(opacity=0);/*For older IE*/
+    transform:translateY(-20px);
+    transition:all .3s;
+    font-family: "Oxygen", sans-serif;
+}
+
+
+/* The wrapper for each item */
+.rig-cell {
+    /*margin:12px;
+    box-shadow:0 0 6px rgba(0,0,0,0.3);*/
+    display:block;
+    position: relative;
+    overflow:hidden;
+}
+
+/* If have the image layer */
+.rig-img {
+    display:block;
+    width: 100%;
+    height: auto;
+    border:none;
+    transform:scale(1);
+    transition:all 1s;
+}
+
+#rig li:hover .rig-img {
+    transform:scale(1.05);
+}
+
+/* If have the overlay layer */
+.rig-overlay {
+    position: absolute;
+    display:block;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    background: #A9A9A9 no-repeat center 40%;
+    background-size:50px 50px;
+    opacity:0;
+    filter:alpha(opacity=0);/*For IE6 - IE8*/
+    transition:all 0.6s;
+}
+#rig li:hover .rig-overlay {
+    opacity:0.8;
+}
+
+#rig li:hover .rig-text {
+    transform:translateY(0px);
+    opacity:0.9;
+}
+
+@media (max-width: 9000px) {
+    #rig li {
+        width:45%;
+    }
+}
+
+@media (max-width: 700px) {
+    #rig li {
+        width:45%;
+    }
+}
+
+@media (max-width: 550px) {
+    #rig li {
+        width:100%;
+    }
+}
+
+#subtext{
+  font-size:14px;
+}
