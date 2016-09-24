@@ -115,8 +115,9 @@ ul ul li a:hover{
 }
 
 .navbar-brand{
-  font-size: 24px;
+  font-size: 24px; /*36px;*/ 
   font-weight: bold;
+  font-family: "Oxygen","Pacifico";
 }
 .navbar{
   background-color: #FFFFFF;
