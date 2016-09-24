@@ -76,9 +76,13 @@
 	</script>
 
 
+
+
 </head>
 
-<body>
+<body data-spy="scroll" data-target="#sidebar" data-offset="50">
+<!-- need to fix scrollspy plugin problems -->
+
 
 	<!-- top navbar -->
 	<div class="navbar navbar-default navbar-fixed-top" role="navigation">
@@ -98,66 +102,63 @@
 		<div class="row row-offcanvas row-offcanvas-left">
 
 			<!-- sidebar -->
-			<div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
+			<nav class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
 				<ul class="nav">
 					<li class="active"><a href="#ux">PORTFOLIO</a></li>
 					<ul class="subnav">
 						<li><a href="#ux">UX</a>
 							<li><a href="#design">DESIGN</a>
-								<li><a href="#marketing">MARKETING</a>
 								</ul>
-								<li><a href="#">ABOUT</a></li>
-								<li><a href="#">RESUME</a></li>
+								<li><a href="about.html">ABOUT</a></li>
+								<li><a href="images/resume.pdf" target="_blank">RESUME</a></li>
 							</ul>
-						</div>
+						</nav>
 
 						<!-- main area -->
 						<div class="col-xs-12 col-sm-9">
 							<section>
-								<div>
-									<p> Hello! </p>
-								</div>
+								<div></div>
 							</section>
 							<section id ="ux">
 								<ul id="rig">
 									<li>
 										<a class="rig-cell">
-											<img class="rig-img" src="images/portfolio/adobe.jpg" />
+											<img class="rig-img" src="images/uxportfolio/adobe.jpg" />
 											<span class="rig-overlay"></span>
 											<span class="rig-text">Adobe Optimization Consulting </br> <span id="subtext">Data Driven A/B Testing &amp; Multivariate Testing </span></span>
 										</a>
 									</li>
 									<li>
 										<a class="rig-cell">
-											<img class="rig-img" src="images/portfolio/cheesquared.jpg" />
+											<img class="rig-img" src="images/uxportfolio/cheesquared.jpg" />
 											<span class="rig-overlay"></span>
 											<span class="rig-text">Personal Website </br> <span id="subtext"> Front End Development &amp; Design </span></span>
 										</a>
 									</li>
 									<li>
 										<a class="rig-cell">
-											<img class="rig-img" src="images/portfolio/iri.jpg" />
+											<img class="rig-img" src="images/uxportfolio/iri.jpg" />
 											<span class="rig-overlay"></span>
 											<span class="rig-text">Internet Research Incubator</br> <span id="subtext"> UX Research on M-Commerce </span></span>
 										</a>
 									</li>
 									<li>
 										<a class="rig-cell">
-											<img class="rig-img" src="images/portfolio/adteam.jpg" />
+											<img class="rig-img" src="images/uxportfolio/adteam.jpg" />
 											<span class="rig-overlay"></span>
 											<span class="rig-text">NSAC Pizza Hut Campaign</br> <span id="subtext">UX &amp; Strategy</span></span>
 										</a>
 									</li>
 									<li>
 										<a class="rig-cell">
-											<img class="rig-img" src="images/portfolio/awechords.jpg" />
+											<img class="rig-img" src="images/uxportfolio/awechords.jpg" />
 											<span class="rig-overlay"></span>
 											<span class="rig-text">Awechords Website </br> <span id="subtext">Front End Development &amp; Design</span></span>
 										</a>
 									</li>
 									<li>
 										<a class="rig-cell">
-											<img class="rig-img" src="images/portfolio/fb.jpg" />
+											<img class="rig-img" src="images/uxportfolio/fb.jpg" />
 											<span class="rig-overlay"></span>
 											<span class="rig-text">Facebook Mobile Exercise</br> <span id="subtext"> Content Strategy </span></span>
 										</a>
@@ -165,111 +166,61 @@
 								</ul>
 							</section>
 
-										<section id ="design">
-											<ul id="rig">
-												<li>
-													<a class="rig-cell">
-														<img class="rig-img" src="images/portfolio/awechords.jpg" />
-														<span class="rig-overlay"></span>
-														<span class="rig-text">Awechords Website</span>
-													</a>
-												</li>
-												<li>
-													<a class="rig-cell">
-														<img class="rig-img" src="images/portfolio/awechords.jpg" />
-														<span class="rig-overlay"></span>
-														<span class="rig-text">Awechords Website</span>
-													</li>
-													<li>
-														<a class="rig-cell">
-															<img class="rig-img" src="images/portfolio/awechords.jpg" />
-															<span class="rig-overlay"></span>
-															<span class="rig-text">Awechords Website</span>
-														</a>
-													</li>
-													<li>
-														<a class="rig-cell">
-															<img class="rig-img" src="images/portfolio/awechords.jpg" />
-															<span class="rig-overlay"></span>
-															<span class="rig-text">Awechords Website</span>
-														</li>
+							<section id ="design">
+								<ul id="rig">
+									<li>
+										<a class="rig-cell">
+											<img class="rig-img" src="images/designportfolio/monsters.jpg" />
+											<span class="rig-overlay"></span>
+											<span class="rig-text">Monsters Inc. Door Decorations</br> <span id="subtext"> Graphic Design </span></span>
+										</a>
+									</li>
+									<li>
+										<a class="rig-cell">
+											<img class="rig-img" src="images/designportfolio/tasctshirt.jpg" />
+											<span class="rig-overlay"></span>
+											<span class="rig-text">TASC Tshirt Design</br> <span id="subtext"> Graphic Design </span></span>
+										</a>
+									</li>
+									<li>
+										<a class="rig-cell">
+											<img class="rig-img" src="images/designportfolio/tasc.jpg" />
+											<span class="rig-overlay"></span>
+											<span class="rig-text">Taiwanese American Heritage Week Flyer Design</br> <span id="subtext"> Graphic Design </span></span>
+										</a>
+									</li>
+									<li>
+										<a class="rig-cell">
+											<img class="rig-img" src="images/designportfolio/tasc2.jpg" />
+											<span class="rig-overlay"></span>
+											<span class="rig-text">Concert Poster Design</br> <span id="subtext"> Graphic Design </span></span>
+										</a>
+									</li>
+									<li>
+										<a class="rig-cell">
+											<img class="rig-img" src="images/designportfolio/tasclogo.jpg" />
+											<span class="rig-overlay"></span>
+											<span class="rig-text">TASC Logo Design</br> <span id="subtext"> Branding &amp; Identity </span></span>
+										</a>
+									</li>
+									<li>
+										<a class="rig-cell">
+											<img class="rig-img" src="images/designportfolio/uclasnap.jpg" />
+											<span class="rig-overlay"></span>
+											<span class="rig-text">UCLA Snapchat Filter</br> <span id="subtext"> Branding &amp; Identity </span></span>
+										</a>
+									</li>
+								</ul>
+							</section>
 
-													</ul>
-												</section>
-												<section id ="design">
-													<ul id="rig">
-														<li>
-															<a class="rig-cell">
-																<img class="rig-img" src="images/portfolio/awechords.jpg" />
-																<span class="rig-overlay"></span>
-																<span class="rig-text">Awechords Website</span>
-															</a>
-														</li>
-														<li>
-															<a class="rig-cell">
-																<img class="rig-img" src="images/portfolio/awechords.jpg" />
-																<span class="rig-overlay"></span>
-																<span class="rig-text">Awechords Website</span>
-															</li>
-															<li>
-																<a class="rig-cell">
-																	<img class="rig-img" src="images/portfolio/awechords.jpg" />
-																	<span class="rig-overlay"></span>
-																	<span class="rig-text">Awechords Website</span>
-																</a>
-															</li>
-															<li>
-																<a class="rig-cell">
-																	<img class="rig-img" src="images/portfolio/awechords.jpg" />
-																	<span class="rig-overlay"></span>
-																	<span class="rig-text">Awechords Website</span>
-																</li>
-
-															</ul>
-														</section>
-														<section id ="marketing">
-															<ul id="rig">
-																<li>
-																	<a class="rig-cell">
-																		<img class="rig-img" src="images/portfolio/adteam.jpg" />
-																		<span class="rig-overlay"></span>
-																		<span class="rig-text">NSAC Pizza Hut </span>
-																	</a>
-																</li>
-																<li>
-																	<a class="rig-cell">
-																		<img class="rig-img" src="images/portfolio/awechords.jpg" />
-																		<span class="rig-overlay"></span>
-																		<span class="rig-text">Awechords Website</span>
-																	</li>
-																	<li>
-																		<a class="rig-cell">
-																			<img class="rig-img" src="images/portfolio/awechords.jpg" />
-																			<span class="rig-overlay"></span>
-																			<span class="rig-text">Awechords Website</span>
-																		</a>
-																	</li>
-																	<li>
-																		<a class="rig-cell">
-																			<img class="rig-img" src="images/portfolio/awechords.jpg" />
-																			<span class="rig-overlay"></span>
-																			<span class="rig-text">Awechords Website</span>
-																		</li>
-
-																	</ul>
-																</section>
-
-
-
-															</div><!-- /.col-xs-12 main -->
-														</div><!--/.row-->
-													</div><!--/.container-->
-
-												</div><!--/.page-container-->
-												<!-- script references -->
-												<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
-												<script src="js/bootstrap.min.js"></script>
-												<script src="js/scripts.js"></script>
+						</div><!-- /.col-xs-12 main -->
+					</div><!--/.row-->
+				</div><!--/.container-->
+			</div><!--/.page-container-->
+			<!-- script references -->
+			<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+			<script src="js/bootstrap.min.js"></script>
+			<script src="js/scripts.js"></script>
 
 
 
