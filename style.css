@@ -40,6 +40,9 @@ body {
   color: black;
 }
 
+#sidebar .icon-bar{
+  position:fixed;
+}
 
 ul ul, ol ul {
   list-style-type: none;
@@ -49,7 +52,34 @@ ul ul li a:hover{
   text-decoration: none;
 }
 
+#footer{
+  position:fixed;
+  bottom: 0;
+  margin-left:-35px; /*temporary fix because footer was shifted to the right */
 
+}
+
+.social-icon li a{
+  text-decoration: none;
+}
+
+#sidebar ul {
+  list-style-type: none;
+}
+
+#footer li{
+    display: inline-block;
+}
+
+.social-icon i{
+  padding: 5px;
+  color: #A9A9A9;
+}
+
+.social-icon i:hover{
+  transform:scale(1.2);
+  color: black;
+}
 
 /* collapsible */
 @media screen and (max-width: 767px) {
