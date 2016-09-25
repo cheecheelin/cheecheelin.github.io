@@ -299,9 +299,9 @@ h4{
 }
 .projectimage-half img{
   padding-top:20px;
-  width: 40%;
+  width: 45%;
 }
 .projectimage-half{
   display: inline-block;
-  padding-left:80px;
+  padding-left:60px;
 }
