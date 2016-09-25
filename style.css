@@ -115,7 +115,7 @@ ul ul li a:hover{
 }
 
 .navbar-brand{
-  font-size: 24px; /*36px;*/ 
+  font-size: 24px; /*36px;*/
   font-weight: bold;
   font-family: "Oxygen","Pacifico";
 }
@@ -271,4 +271,37 @@ p{
     padding-left: 0px;
     text-align: center;
   }
+}
+
+h3{
+  font-size: 30px;
+  color: #A9A9A9;
+  font-weight:bold;
+  text-align: center;
+}
+h4{
+  font-size:20px;
+  color: #A9A9A9;
+  font-weight: bold;
+}
+.projectimage img{
+  padding-top:20px;
+  width: 100%;
+}
+.quote {
+  font-size:13px;
+  color: #A9A9A9;
+}
+
+.caption{
+  margin-bottom:0px;
+  text-align:center;
+}
+.projectimage-half img{
+  padding-top:20px;
+  width: 40%;
+}
+.projectimage-half{
+  display: inline-block;
+  padding-left:80px;
 }
