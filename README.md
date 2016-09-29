@@ -1,3 +1,4 @@
 ##What
-This is my personal website (currently undergoing annual revision)
+This is my personal website (view @ www.cheesquared.com)
+Currently going annual revision.
 
