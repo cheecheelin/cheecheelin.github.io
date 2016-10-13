@@ -232,7 +232,7 @@ ul ul li a:hover{
 }
 @media (max-width: 550px) {
     #rig li {
-        width:100%;
+        width:90%;
     }
 }
 
