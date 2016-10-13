@@ -221,10 +221,15 @@ ul ul li a:hover{
 
 @media (max-width: 1200px) {
     #rig li {
-        width:100%;
+        width:90%;
     }
 }
 
+@media (max-width: 800px) {
+    #rig li {
+        width:90%;
+    }
+}
 @media (max-width: 550px) {
     #rig li {
         width:100%;
