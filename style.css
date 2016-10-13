@@ -284,6 +284,12 @@ h4{
   color: #A9A9A9;
   font-weight: bold;
 }
+h6{
+  font-size:15px;
+  color: #A9A9A9;
+  font-weight: bold;
+  text-align: left;
+}
 .projectimage img{
   padding-top:20px;
   width: 100%;
