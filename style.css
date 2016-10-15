@@ -246,9 +246,14 @@ ul ul li a:hover{
   float:left;
 }
 .img-circle{
+  width:260px;
+  height:260px;
+}
+/*.rectangle{
   width:250px;
   height:250px;
-}
+  margin:30px;
+}*/
 h2{
   color: #A9A9A9;
   text-align: left;
