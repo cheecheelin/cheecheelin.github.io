@@ -1,0 +1,322 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cheechee Lin</title>
+  <link rel="shortcut icon" type="image/x-icon" href="images/chee.ico">
+
+  <!-- CSS -->
+  <link href="https://fonts.googleapis.com/css?family=Hind" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+  <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet" >
+
+
+  <!-- icons -->
+  <script src="https://use.fontawesome.com/1143472ed2.js"></script>
+
+
+  <!-- Bootstrap-->
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="bootstrap/js/bootstrap.min.js"></script>
+
+  <!-- Google Analytics Tracking Code -->
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-52353413-1', 'auto');
+  ga('send', 'pageview');
+  </script>
+
+  <script>
+  $(document).ready(function() {
+    $('[data-toggle=offcanvas]').click(function() {
+      $('.row-offcanvas').toggleClass('active');
+    });
+  });
+  </script>
+
+  <!-- smooth scrolling -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script>
+  $(document).ready(function(){
+    // Add smooth scrolling to all links
+    $("a").on('click', function(event) {
+
+      // Make sure this.hash has a value before overriding default behavior
+      if (this.hash !== "") {
+        // Prevent default anchor click behavior
+        event.preventDefault();
+
+        // Store hash
+        var hash = this.hash;
+
+        // Using jQuery's animate() method to add smooth page scroll
+        // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+        $('html, body').animate({
+          scrollTop: $(hash).offset().top
+        }, 800, function(){
+
+          // Add hash (#) to URL when done scrolling (default click behavior)
+          window.location.hash = hash;
+        });
+      } // End if
+    });
+  });
+  </script>
+
+  <!-- PASSWORD PROTECT THIS PAGE (LOW LEVEL -->
+  <script language="JavaScript">
+    var password;
+    var pass1="cheechee";
+    password=prompt('Please enter the password provided',' ');
+    if (password==pass1) alert('You will be redirected once you hit close');
+    else {
+      window.location="stitcher.html";
+    }
+  </script>
+
+
+
+
+</head>
+
+<body data-spy="scroll" data-target="#sidebar" data-offset="50">
+  <!-- need to fix scrollspy plugin problems -->
+
+
+  <!-- top navbar -->
+  <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="offcanvas" data-target=".sidebar-nav">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">CHEECHEE LIN</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row row-offcanvas row-offcanvas-left">
+
+      <!-- sidebar -->
+      <nav class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
+        <ul class="nav">
+          <li class="active"><a href="index.html">PORTFOLIO</a></li>
+          <!--  second anchor doesn't work
+          <ul class="subnav">
+          <li><a href="index.html">UX</a>
+          <li><a href="index.html#design">DESIGN</a>
+        </ul>
+      -->
+      <li><a href="about.html">ABOUT</a></li>
+      <li><a href="images/resume.pdf" target="_blank">RESUME</a></li>
+    </ul>
+    <ul id="footer">
+      <li>
+        <a class="social-icon" href="http://www.linkedin.com/in/cheecheelin" target="_blank">
+          <i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i>
+        </a>
+      </li>
+      <li>
+        <a class="social-icon" href="http://github.com/cheecheelin" target="_blank">
+          <i class="fa fa-github-square fa-2x" aria-hidden="true"></i>
+        </a>
+      </li>
+      <li>
+        <a class="social-icon" href="http://behance.net/cheecheelin" target="_blank">
+          <i class="fa fa-behance-square fa-2x" aria-hidden="true"></i>
+        </a>
+      </li>
+      <li>
+        <a class="social-icon" href="http://instagram.com/cheecheelin" target="_blank">
+          <i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
+        </a>
+      </li>
+      <!-- currently not updated icon
+      <li>
+        <a class="social-icon">
+          <i class="fa fa-medium fa-2x" aria-hidden="true"></i>
+        </a>
+      </li>
+    -->
+    </ul>
+  </nav>
+
+  <!-- main area -->
+  <div class="col-xs-12 col-sm-9">
+
+    <section>
+      <h3> Stitcher Product Challenge </h3>
+      <div class="projectimage">
+        <img src="images/uxportfolio/stitcher/stitcherscreens.png"/>
+      </div>
+
+      <div>
+      </br>
+        <h4>The Challenge</h4>
+        <p>Podcasting has gained popularity recently thanks to the rapid growth in smartphone use and the rise of wildly popular content like Serial. However, the technology that supports the creation and distribution of podcasts has evolved at a much slower pace compared to other mediums. Stitcher is one of the most widely used podcast platforms on the market right now. </p>
+        <p>Act as Stitcher's lead PM and assume listeners who interact with other users have a better overall experience. Determine:
+          <ul class="quote">
+            <li>The first feature to build to test this assumption and why</li>
+            <li>How this feature looks and behaves</li>
+            <li>Discuss tradeoffs, risks and metrics for success</li>
+          </ul>
+        </p>
+      </br>
+        <h4>The Process</h4>
+        <p>I decided to adopt a design thinking <span style= "font-weight: bold">[Empathize - Define - Ideate - Prototype - Test] </span>approach to tackle this problem.</p>
+      <div class="projectimage">
+        <img src="images/uxportfolio/stitcher/stitcherprocess.jpg"/>
+      </div>
+      </br>
+        <h4>Understanding the Challenge at Hand</h4>
+        <p> To start off, I needed to clarify the parameters of this hypothesis: "Listeners who <span style="font-weight: bold ">interact</span> with other listeners have a <span style="font-weight: bold">better overall experience</span>". I would need to operationalize the definition of "interact" and "better overall experience".</p>
+        <p> The essence of "interact" suggested any interpersonal communication between two listeners, and that could mean anything from common social media action patterns such as 'liking', 'sharing', 'commenting', 'discussing', 'reacting', 'discovering', and 'following'.</p>
+        <p> "Better overall experience" is a broad concept, and could mean anything from 'increased satisfaction with the app', 'increased retention in usage of the app', or 'increased functionality of the app'.</p>
+        <p> Now that I had determined a number of possible paths these definitions could take, I decided to delve deep into the needs of the user to thoroughly determine what feature I would build to test this hypothesis.</p>
+      </br>
+        <h4>Empathizing</h4>
+        <p>THE KEY QUESTIONS: Who are the key users of Stitcher? Why would a user possibly be interested in a social interaction aspect in a podcast app?</p>
+        <p> To answer these questions, I conducted three user interviews. (In the interest of time, I only interviewed 3 people but in a real development setting, I would probably aim to collect data from a larger user base.) Demographics are as follows: </p>
+          <ul class="quote">
+            <li>Female in early 20s, college student. Listens to podcasts while doing house tasks. Mainly listens to news podcasts.</li>
+            <li>Male in early 20s, college student. Busy person. Listens to podcasts while on the road/ on the bus. Interested in TED talks and news podcasts.</li>
+            <li>Male in late 40s, Venture Capitalist. Listens to podcasts only while driving. Key topics of interest revolve around entrepreneurship (think 'The Pitch' podcast) and leisure purposes ('Pop culture' podcast). Would be interested in interacting with people of similar interests in entrepreneurship. </li>
+          </ul>
+        <p> After chatting in depth with these three users about their usage of podcasts, I was able to derive the following patterns:</p>
+          <ul class="quote">
+            <li>These users listen to podcasts while <span style="font-weight:bold"> dual tasking (their hands are busy)</span>.</li>
+            <li>These users lead <span style="font-weight:bold">busy</span> lives and use podcasts as a means to absorb information and be productive in learning about their topics of interest.</li>
+          </ul>
+        <p> I was also able to uncover a number of user frustrations while talking to these users of podcasts: </p>
+          <ul class="quote">
+            <li>There is no 'Yelp/Amazon-reviews' of podcasts. There's no 'validation' on whether a podcast is good or not, you simply have to dedicate a significant amount of time to listening from beginning to end.</li>
+            <li>There is no easy way to find content that may be of interest. Unlike a book that you can quickly skim through chapters to see if the topics are of interest to you, podcasts require you to be dedicated to listening from beginning to end.</li>
+            <li>There is no 'bookmarking' system in place, so you cannot easily jump around to important parts.</li>
+          </ul>
+        <p> These user frustrations led me to the next step in the process, Defining. </p>
+      </br>
+        <h4> Defining </h4>
+        <p> From the information gathered through the user interviews, I was able to define the <span style="font-weight:bold">user needs</span> as follows:</p>
+        <ul class="quote">
+          <li>A quick and easy way to find quality curated content of interest</li>
+          <li>An easy way to save their favorite podcasts</li>
+          <li>An easy way to jump to key points in the podcast</li>
+        </ul>
+        <p> In addition, I was able to uncover the user goals of these needs: </p>
+        <ul class="quote">
+          <li><span style="font-style: italic">Save time</span> - users are busy and do not have time to sift through large amounts of content to find the best podcasts</li>
+          <li><span style="font-style: italic">Discover new content</span> - users would appreciate content recommendations they otherwise wouldn't have found </li>
+          <li><span style="font-style: italic">Develop an emotional connection</span> - users will come back if they feel connected to the community </li>
+        </ul>
+      </br>
+        <h4> Ideating </h4>
+        <p> In the process of brainstorming new features to address these user needs and goals, I came up with quite a few ideas, including the following: </p>
+        <ul class="quote">
+          <li>Integrations with wearables (headphones, apple watch etc. since their hands are busy) to bookmark/highlight/annotate their favorite sections in a podcast and share with other users</li>
+          <li>Real time transcribing of comments (while a podcast is playing) and having 'pings' to let fellow listeners know key sections provoked discussion </li>
+          <li>A chat section to encourage discussion in each podcast (similar to NYTimes articles comments)</li>
+          <li>A discovery and recommendation engine so listeners can follow 'influencers' with good taste in podcasts</li>
+        </ul>
+        <p> [Market Research]: I also looked at other interaction in different forms of media consumption, including Facebook Live Streaming, Medium highlighting and commenting, Twitter reactions, YouTube time-comment linkage, Quora blogging, and Instagram/ Spotify Discover. </p>
+        <p> After evaluating all of these ideas, I decided to choose <span style="font-weight: bold">'Discovery'</span> as the main feature to develop, since it most closely addressed the user needs I had uncovered in my user interviews. Discovery would provide additional value add in interacting with other users since it would save users time (in sifting through content), empower them to discover new content, and develop an emotional connection with the community (bonding through love of similar topics of interest).</p>
+        <p> Validation of Hypothesis: To test whether this feature would actually better the overall experience, I decided to implement an A/B test on the existence of this feature. Group A would have the current Stitcher app (without the new discovery feature) and we would test this against Group B (Discovery feature) and measure for metrics such as 1)how people engage with the feature and rate of return 3) what demographics are engaging. </p>
+
+      </br>
+        <h4> Prototyping </h4>
+        <p>To start thinking about possible layouts and functionality of the features to be tested in Group B, I first made the following assumptions and identified the following constraints in the interest of this exercise:</p>
+        <p> Assumptions:</p>
+        <ul class="quote">
+          <li>Users are open to listening to podcasts as a valid form of content consumption</li>
+          <li>Users who utilize the facebook social login feature on the current Stitcher app are open to interacting with other users</li>
+          <li>Stitcher has the resources to mass A/B test</li>
+          <li>Stitcher has a large enough following for a statistically significant result in A/B testing</li>
+        </ul>
+        <p> Constraints:</p>
+        <ul class="quote">
+          <li>The current home screen in Stitcher has to stay the home screen because of paid content issues</li>
+          <li>We are developing this feature for when users are actively using the app (ex. their hands are not busy doing something else)</li>
+          <li>In this iteration we will not place accesibility as the first concern, though it is still of importance</li>
+        </ul>
+
+        <p>I sketched out a number of ways a user could possibly discover new content: 1) through a social feed 2) through an influencer's profile. These are a couple of the hand sketches I did. </p>
+        <div class="projectimage">
+          <img src="images/uxportfolio/stitcher/stitcherroughprototype.jpg"/>
+        </div>
+      </br>
+        <p> To fully flesh out my ideas further, I mocked up the concept in high fidelity using Sketch and basing it off of the current style of the Stitcher app.</p>
+      </br>
+        <div class="projectimage">
+          <img src="images/uxportfolio/stitcher/stitcherscreens.001.jpeg"/>
+          <img src="images/uxportfolio/stitcher/stitcherscreens.002.jpeg"/>
+          <img src="images/uxportfolio/stitcher/stitcherscreens.003.jpeg"/>
+          <img src="images/uxportfolio/stitcher/stitcherscreens.004.jpeg"/>
+        </div>
+      </br>
+        <h4> Testing </h4>
+        <p>The next step of this process would be to test and iterate on the design. Ideally, I would like to test the wireframes of this feature on a focus group to garner feedback on the functionality of the discovery interaction feature before releasing it to the public in the A/B test.</p>
+        <p> After getting feedback from the focus group, I would build out this feature and roll it out in an A/B test, gathering data on the metrics of success against the control group (no discovery feature) defined earlier: </p>
+        <ul class="quote">
+          <li>Whether users are engaging with the discovery feature</li>
+          <li>If a user uses the discovery feature, does this increase usage of the app?</li>
+          <li>How are users engaging with the discovery feature? What demographics are engaging with the discovery feature?</li>
+        </ul>
+        <div class="projectimage">
+          <img src="images/uxportfolio/stitcher/abtesting.jpeg"/>
+        </div>
+      </br>
+        <p> If we are able to see a significant positive trend in increased usage of the app and increased engagement with the community, then I would suggest for Stitcher to roll out this feature to all users.</p>
+      </br>
+        <h4> Acknowledgement of Shortcomings In This Exercise </h4>
+        <p> As mentioned above, there were various assumptions and constraints taken into consideration when designing this test. However, this is quite an expensive testing method for a product feature rollout, and needs to take into account the business goals of such a feature (how much development/design resources need to be allocated towards this, whether there is a significant way to monetize this feature, and if this aligns with the long term goals of Stitcher). In addition, the prototypes designed above are purely draft one mockups, and have not gone through substantial user testing to determine effectiveness.</p>
+
+
+      </div>
+    </section>
+
+</br></br></br>
+
+<!-- Read More Here -->
+  <div>
+    <h6 style="text-align:center">More Projects </h6>
+    <ul id="rig">
+      <li>
+        <a class="rig-cell" target="_blank">
+          <img class="rig-img" src="images/uxportfolio/iri.jpg" />
+          <span class="rig-overlay"></span>
+          <span class="rig-text"><i class="fa fa-link" aria-hidden="true"></i></br>Internet Research Incubator</br> <span id="subtext"> UX Research on M-Commerce </br>Coming Soon </span></span>
+        </a>
+      </li>
+      <li>
+        <a class="rig-cell" target="_blank">
+          <img class="rig-img" src="images/uxportfolio/cheesquared.jpg" />
+          <span class="rig-overlay"></span>
+          <span class="rig-text"><i class="fa fa-link" aria-hidden="true"></i></br>Personal Website </br> <span id="subtext"> Front End Development &amp; Design </br>Coming Soon</span></span>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+
+</div>
+</body>
+
+</html>
