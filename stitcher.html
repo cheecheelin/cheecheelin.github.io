@@ -12,7 +12,9 @@
   <link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
   <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
   <link href="style.css" rel="stylesheet" >
+
 
 
   <!-- icons -->
@@ -247,12 +249,58 @@
       </br>
         <p> To fully flesh out my ideas further, I mocked up the concept in high fidelity using Sketch and basing it off of the current style of the Stitcher app.</p>
       </br>
-        <div class="projectimage">
+
+      <div class="w3-content w3-display-container" style="max-width:100%">
+        <img class="mySlides" src="images/uxportfolio/stitcher/stitcher_screens.001.jpeg" style="width:100%">
+        <img class="mySlides" src="images/uxportfolio/stitcher/stitcher_screens.002.jpeg" style="width:100%">
+        <img class="mySlides" src="images/uxportfolio/stitcher/stitcher_screens.003.jpeg" style="width:100%">
+        <img class="mySlides" src="images/uxportfolio/stitcher/stitcher_screens.004.jpeg" style="width:100%">
+        <div class="w3-center w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+          <div class="w3-left w3-padding-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+          <div class="w3-right w3-padding-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+          <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+          <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+          <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+          <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(4)"></span>
+        </div>
+      </div>
+      <!-- ADDING IN SLIDESHOW -->
+      <script>
+        var slideIndex = 1;
+        showDivs(slideIndex);
+
+        function plusDivs(n) {
+          showDivs(slideIndex += n);
+        }
+
+        function currentDiv(n) {
+          showDivs(slideIndex = n);
+        }
+
+        function showDivs(n) {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("demo");
+          if (n > x.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = x.length}
+          for (i = 0; i < x.length; i++) {
+             x[i].style.display = "none";
+          }
+          for (i = 0; i < dots.length; i++) {
+             dots[i].className = dots[i].className.replace(" w3-white", "");
+          }
+          x[slideIndex-1].style.display = "block";
+          dots[slideIndex-1].className += " w3-white";
+        }
+    </script>
+
+
+        <!-- <div class="projectimage">
           <img src="images/uxportfolio/stitcher/stitcherscreens.001.jpeg"/>
           <img src="images/uxportfolio/stitcher/stitcherscreens.002.jpeg"/>
           <img src="images/uxportfolio/stitcher/stitcherscreens.003.jpeg"/>
           <img src="images/uxportfolio/stitcher/stitcherscreens.004.jpeg"/>
-        </div>
+        </div> -->
       </br>
         <h4 style="color:#6A6ACB">5. Testing </h4>
         <p>The next step of this process would be to test and iterate on the design. Ideally, I would like to test the wireframes of this feature on a focus group to garner feedback on the functionality of the discovery interaction feature before releasing it to the public in the A/B test.</p>
