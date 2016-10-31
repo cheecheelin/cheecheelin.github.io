@@ -249,50 +249,29 @@
       </br>
         <p> To fully flesh out my ideas further, I mocked up the concept in high fidelity using Sketch and basing it off of the current style of the Stitcher app.</p>
       </br>
-
-      <div class="w3-content w3-display-container" style="max-width:100%">
+      <div class="w3-content w3-section" style="max-width:1000px">
         <img class="mySlides" src="images/uxportfolio/stitcher/stitcher_screens.001.jpeg" style="width:100%">
         <img class="mySlides" src="images/uxportfolio/stitcher/stitcher_screens.002.jpeg" style="width:100%">
         <img class="mySlides" src="images/uxportfolio/stitcher/stitcher_screens.003.jpeg" style="width:100%">
         <img class="mySlides" src="images/uxportfolio/stitcher/stitcher_screens.004.jpeg" style="width:100%">
-        <div class="w3-center w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
-          <div class="w3-left w3-padding-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
-          <div class="w3-right w3-padding-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
-          <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
-          <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
-          <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
-          <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(4)"></span>
-        </div>
       </div>
-      <!-- ADDING IN SLIDESHOW -->
       <script>
-        var slideIndex = 1;
-        showDivs(slideIndex);
+      var myIndex = 0;
+      carousel();
 
-        function plusDivs(n) {
-          showDivs(slideIndex += n);
-        }
-
-        function currentDiv(n) {
-          showDivs(slideIndex = n);
-        }
-
-        function showDivs(n) {
+      function carousel() {
           var i;
           var x = document.getElementsByClassName("mySlides");
-          var dots = document.getElementsByClassName("demo");
-          if (n > x.length) {slideIndex = 1}
-          if (n < 1) {slideIndex = x.length}
           for (i = 0; i < x.length; i++) {
              x[i].style.display = "none";
           }
-          for (i = 0; i < dots.length; i++) {
-             dots[i].className = dots[i].className.replace(" w3-white", "");
-          }
-          x[slideIndex-1].style.display = "block";
-          dots[slideIndex-1].className += " w3-white";
-        }
-    </script>
+          myIndex++;
+          if (myIndex > x.length) {myIndex = 1}
+          x[myIndex-1].style.display = "block";
+          setTimeout(carousel, 3500); // Change image every 2 seconds
+      }
+      </script>
+
 
 
         <!-- <div class="projectimage">
