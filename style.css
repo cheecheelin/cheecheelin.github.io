@@ -24,7 +24,7 @@ body {
 }
 
 #sidebar .nav li a{
-  color: #A9A9A9;
+  color: #4A4A4A;
   font-size: 12px;
   padding-top:5px;
   padding-bottom:5px;
@@ -73,7 +73,7 @@ ul ul li a:hover{
 
 .social-icon i{
   padding: 5px;
-  color: #A9A9A9;
+  color: #4A4A4A;
 }
 
 .social-icon i:hover{
@@ -117,6 +117,7 @@ ul ul li a:hover{
 .navbar-brand{
   font-size: 24px; /*36px;*/
   font-weight: bold;
+  color:#4A4A4A;
   font-family: "Oxygen","Pacifico";
 }
 .navbar{
@@ -197,7 +198,7 @@ ul ul li a:hover{
     bottom: 0;
     right: 0;
     margin: auto;
-    background: #A9A9A9 no-repeat center 40%;
+    background: #4A4A4A no-repeat center 40%;
     background-size:50px 50px;
     opacity:0;
     filter:alpha(opacity=0);/*For IE6 - IE8*/
@@ -255,7 +256,7 @@ ul ul li a:hover{
   margin:30px;
 }*/
 h2{
-  color: #A9A9A9;
+  color: #4A4A4A;
   text-align: left;
   font-size: 20px;
 }
@@ -264,7 +265,7 @@ h2{
 }
 
 p{
-  color: #A9A9A9;
+  color: #4A4A4A;
 }
 @media (max-width: 550px){
   .img circle{
@@ -286,18 +287,18 @@ p{
 
 h3{
   font-size: 30px;
-  color: #A9A9A9;
+  color: #4A4A4A;
   font-weight:bold;
   text-align: center;
 }
 h4{
   font-size:20px;
-  color: #A9A9A9;
+  color: #4A4A4A;
   font-weight: bold;
 }
 h6{
   font-size:18px;
-  color: #999999;
+  color: #4A4A4A;
   font-weight: bold;
   text-align: left;
 }
@@ -311,7 +312,7 @@ h6{
 }
 .quote {
   font-size:13px;
-  color: #A9A9A9;
+  color: #4A4A4A;
 }
 
 .caption{
