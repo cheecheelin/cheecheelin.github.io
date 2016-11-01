@@ -84,9 +84,9 @@
   <!-- PASSWORD PROTECT THIS PAGE (LOW LEVEL -->
   <script language="JavaScript">
     var password;
-    var pass1="cheechee";
+    var mypass="asana";
     password=prompt('Please enter the password provided',' ');
-    if (password==pass1) alert('You will be redirected once you hit close');
+    if (password==mypass) alert('You will be redirected once you hit close');
     else {
       window.location="stitcher.html";
     }
@@ -185,9 +185,25 @@
       </br>
         <h4>Understanding the Challenge at Hand</h4>
         <p> To start off, I needed to clarify the parameters of this hypothesis: "Listeners who <span style="font-weight: bold ">interact</span> with other listeners have a <span style="font-weight: bold">better overall experience</span>". I would need to operationalize the definition of "interact" and "better overall experience".</p>
-        <p> The essence of "interact" suggested any interpersonal communication between two listeners, and that could mean anything from common social media action patterns such as 'liking', 'sharing', 'commenting', 'discussing', 'reacting', 'discovering', and 'following'.</p>
-        <p> "Better overall experience" is a broad concept, and could mean anything from 'increased satisfaction with the app', 'increased retention in usage of the app', or 'increased functionality of the app'.</p>
+        <p> <span style="font-weight: bold;">Interact</span> </p>
+            <ul class="quote">
+              <li>Liking / Reacting (Stitcher already has the 'favoriting' feature)</li>
+              <li>Curating (Stitcher already has the 'stitch together podcasts' feature)</li>
+              <li>Sharing &amp; Discovering</li>
+              <li>Commenting &amp; Discussing</li>
+            </ul>
+          </br>
+        <p><span style="font-weight: bold; ">Better overall experience</span></p>
+            <ul class="quote">
+              <li>Increased satisfaction with the app (Could be measured via a rating popup)</li>
+              <li>Increased usage/retention of the app</li>
+              <li> Increased engagement with functionality of the app (Could be measured with increased time on screen)</li>
+            </ul>
+    </br>
+  </br>
+      <div>
         <p> Now that I had determined a number of possible paths these definitions could take, I decided to delve deep into the needs of the user to thoroughly determine what feature I would build to test this hypothesis.</p>
+      </div>
       </br>
         <h4>The Process</h4>
         <p>I decided to adopt a <span style= "font-weight: bold">DESIGN THINKING </span>framework to tackle this problem. (Original framework credits: IDEO)</p>
@@ -222,7 +238,7 @@
           <li>A discovery and recommendation engine so listeners can follow 'influencers' with good taste in podcasts</li>
         </ul>
         <p> [Market Research]: I also looked at other interaction in different forms of media consumption, including Facebook Live Streaming, Medium highlighting and commenting, Twitter reactions, YouTube time-comment linkage, Quora blogging, and Instagram/ Spotify Discover. </p>
-        <p> After evaluating all of these ideas, I decided to choose <span style="font-weight: bold">'Discovery'</span> as the main feature to develop, since it most closely addressed the user needs I had uncovered in my user interviews. Discovery would provide additional value add in interacting with other users since it would save users time (in sifting through content), empower them to discover new content, and develop an emotional connection with the community (bonding through love of similar topics of interest).</p>
+        <p> After evaluating all of these ideas, I decided to choose <span style="font-weight: bold">'Discovery'</span> as the main feature to develop, since it most closely addressed the user needs I had uncovered in my user interviews. Discovery would provide additional value add in interacting with other users since it would save users time (in sifting through content), empower them to discover new content, and develop an emotional connection with the community (bonding through love of similar topics of interest). This feature would also address the gap in Stitcher's current product features and expand upon the two key advantages Stitcher already does well: Stitching and Favoriting.</p>
         <p> Validation of Hypothesis: To test whether this feature would actually better the overall experience, I decided to implement an A/B test on the existence of this feature. Group A would have the current Stitcher app (without the new discovery feature) and we would test this against Group B (Discovery feature) and measure for metrics such as 1)how people engage with the feature and rate of return 3) what demographics are engaging. </p>
 
       </br>
@@ -232,6 +248,7 @@
         <ul class="quote">
           <li>Users are open to listening to podcasts as a valid form of content consumption</li>
           <li>Users who utilize the facebook social login feature on the current Stitcher app are open to interacting with other users</li>
+          <li>We can utilize the Facebook API (since Stitcher already implemented a social login) and access a user's friends list and interests</li>
           <li>Stitcher has the resources to mass A/B test</li>
           <li>Stitcher has a large enough following for a statistically significant result in A/B testing</li>
         </ul>
@@ -247,7 +264,7 @@
           <img src="images/uxportfolio/stitcher/processshot.jpg"/>
         </div>
       </br>
-        <p> To fully flesh out my ideas further, I mocked up the concept in high fidelity using Sketch and basing it off of the current style of the Stitcher app.</p>
+        <p> To fully flesh out my ideas further, I mocked up the concept in high fidelity using Sketch and basing it off of the current style of the Stitcher app. The following slideshow is a mockup of the discover feature and its functionality.</p>
       </br>
       <div class="w3-content w3-section" style="max-width:1000px">
         <img class="mySlides" src="images/uxportfolio/stitcher/stitcher_screens.001.jpeg" style="width:100%">
@@ -295,11 +312,18 @@
       </br>
         <p> If we are able to see a significant positive trend in increased usage of the app and increased engagement with the community, then I would suggest for Stitcher to roll out this feature to all users.</p>
       </br>
+        <h4>Product Feature Prioritization </h4>
+        <p>The following timeline balances the user goals, development resources, and business considerations (potential monetization). It is important to note that since I do not have insight to the overarching long term product strategy, it is harder to immediately determine where this feature build fits into the product roadmap. </p>
+        <div class="projectimage">
+          <img src="images/uxportfolio/stitcher/timeline.jpg"/>
+        </div>
+        <p>The first feature within Discover I hope to develop would be the curated playlists portion, as Stitcher already has a feature in place for "stitching together playlists". We would need to tap into this existing dataset and utilize Machine Learning to surface content that users would be interested in. After this subfeature is implemented, this would hopefully grow the user base, and therefore pave the way for the social aspect subfeatures such as 'reviewing podcasts' 'recommending', and 'real-time commenting'. Subsequently, network effects would take place and further grow the user base, and provide added value to the 'follow an influencer' subfeature.</p>
+      </br>
         <h4> Acknowledgement of Shortcomings In This Exercise </h4>
         <p> As mentioned above, there were various assumptions and constraints taken into consideration when designing this test. However, this is quite an expensive testing method for a product feature rollout, and needs to take into account the business goals of such a feature (how much development/design resources need to be allocated towards this, whether there is a significant way to monetize this feature, and if this aligns with the long term goals of Stitcher). In addition, the prototypes designed above are purely draft one mockups, and have not gone through substantial user testing to determine effectiveness.</p>
-
-
       </div>
+
+      <p> This exercise wouldn't have been possible without NounProject, Phillip An, Elizabeth Chin, Michael Stilton, Elbert Kim, Mike Wang. Many thanks to these people for allowing me to interview them as users and tap into their dev expertise.</p>
     </section>
 
 </br></br></br>
