@@ -82,7 +82,7 @@
   </script>
 
   <!-- PASSWORD PROTECT THIS PAGE (LOW LEVEL -->
-  <script language="JavaScript">
+  <!-- <script language="JavaScript">
     var password;
     var mypass="asana";
     password=prompt('Please enter the password provided',' ');
@@ -90,8 +90,20 @@
     else {
       window.location="stitcher.html";
     }
-  </script>
+  </script>-->
 
+  <script language="JavaScript">
+    var password;
+    var mypass="asana";
+    password=prompt('Please enter the password provided',' ');
+    if (password==mypass){
+      window.location="stitcher.html";
+    }
+    else{
+      alert('Sorry, wrong pass');
+      window.location="index.html";
+    }
+</script>
 
 
 
@@ -206,7 +218,7 @@
       </div>
       </br>
         <h4>The Process</h4>
-        <p>I decided to adopt a <span style= "font-weight: bold">DESIGN THINKING </span>framework to tackle this problem. (Original framework credits: IDEO)</p>
+        <p>I decided to adopt a <span style= "font-weight: bold">DESIGN THINKING </span>framework to tackle this problem. (Inspired by: <a href="https://designthinking.ideo.com/"> IDEO </a>)</p>
         <div class="projectimage">
           <img src="images/uxportfolio/stitcher/designthinking.jpg"/>
         </div>
