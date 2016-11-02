@@ -87,6 +87,10 @@
     var mypass="asana";
     password=prompt('Please enter the password provided',' ');
     if (password==mypass) alert('You will be redirected once you hit close');
+    else if (password!=mypass) {
+      alert('Sorry, wrong password');
+      window.location="index.html";
+    }
     else {
       window.location="stitcher.html";
     }
