@@ -82,16 +82,15 @@
   </script>
 
   <!-- PASSWORD PROTECT THIS PAGE (LOW LEVEL -->
-  <script language="JavaScript">
+  <script type="text/javascript">
     var password;
     var mypass="asana";
     password=prompt('Please enter the password provided',' ');
-    if (password==mypass) alert('You will be redirected once you hit close');
+    if (password === mypass) alert('You will be redirected once you hit close');
     else if (password!=mypass) {
       alert('Sorry, wrong password, please try again');
       window.location="index.html";
-    }
-    else {
+    } else {
       window.location="stitcher.html";
     }
   </script>
