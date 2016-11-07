@@ -1,4 +1,3 @@
 ##What
 This is my personal website (view @ www.cheesquared.com)
-Currently going annual revision.
-
+Currently adding additional projects I've been working on, stay tuned.
