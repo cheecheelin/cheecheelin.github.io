@@ -1,0 +1,74 @@
+
+<html>
+<head>
+  <script src="script/jquery-3.1.1.min.js"></script>
+  <script src="script/fabric.min.js"></script>
+</head>
+<body>
+  <canvas id="c" width="800" height="600"></canvas>
+  <script>
+  var canvas= new fabric.Canvas('c');
+  var rect = new fabric.Rect({
+    top: 200,
+    left: 500,
+    fill:'#ef3a5b',
+    stroke:'#ef3a5b',
+    strokeWidth: 5,
+    rx:17,
+    ry:17,
+    width:150,
+    height:150,
+  });
+  var rect2 = new fabric.Rect({
+    top: 100,
+    left: 370,
+    fill:'white',
+    stroke:'#69c8c3',
+    strokeWidth: 3,
+    rx:17,
+    ry:17,
+    width:200,
+    height:200,
+  });
+  var rect3 = new fabric.Rect({
+    top: 290,
+    left: 450,
+    fill:'white',
+    stroke:'#f4a51d',
+    strokeWidth: 3,
+    rx:17,
+    ry:17,
+    width:88,
+    height:88,
+  });
+  var rect4 = new fabric.Rect({
+    top: 150,
+    left: 600,
+    fill:'white',
+    stroke:'#39a1be',
+    strokeWidth: 3,
+    rx:17,
+    ry:17,
+    width:105,
+    height:105,
+  });
+
+
+
+
+  canvas.add(rect4);
+  canvas.add(rect2);
+  canvas.add(rect3);
+  canvas.add(rect);
+  fabric.Image.fromURL('script/lahacks.png', function(img){
+    img.setWidth(125);
+    img.setHeight(155);
+    img.setTop(180);
+    img.setLeft(530);
+    canvas.add(img);
+  });
+
+
+  </script>
+</body>
+</html>
