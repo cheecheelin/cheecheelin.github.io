@@ -124,9 +124,17 @@ ul ul li a:hover{
 .navbar{
   background-color: #FFFFFF;
   border-width: 0px;
-  padding-top: 25px;
-  padding-left: 25px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  /*padding-left: 40%; */
 }
+
+
+
+object {
+  width: 80%;
+}
+
 
 
 /* TEST GRID */
