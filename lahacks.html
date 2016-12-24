@@ -1,74 +1,313 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cheechee Lin</title>
+  <link rel="shortcut icon" type="image/x-icon" href="images/chee.ico">
+
+  <!-- CSS -->
+  <link href="https://fonts.googleapis.com/css?family=Hind" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+  <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet" >
+
+  <!-- paper JS demo -->
+  <script src="script/jquery-3.1.1.min.js"></script>
+  <script src="script/fabric.min.js"></script>
+  <!-- icons -->
+  <script src="https://use.fontawesome.com/1143472ed2.js"></script>
+
+
+  <!-- Bootstrap-->
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="bootstrap/js/bootstrap.min.js"></script>
+
+  <!-- Google Analytics Tracking Code -->
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-52353413-1', 'auto');
+  ga('send', 'pageview');
+  </script>
+
+  <script>
+  $(document).ready(function() {
+    $('[data-toggle=offcanvas]').click(function() {
+      $('.row-offcanvas').toggleClass('active');
+    });
+  });
+  </script>
+
+  <!-- smooth scrolling -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script>
+  $(document).ready(function(){
+    // Add smooth scrolling to all links
+    $("a").on('click', function(event) {
+
+      // Make sure this.hash has a value before overriding default behavior
+      if (this.hash !== "") {
+        // Prevent default anchor click behavior
+        event.preventDefault();
+
+        // Store hash
+        var hash = this.hash;
+
+        // Using jQuery's animate() method to add smooth page scroll
+        // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+        $('html, body').animate({
+          scrollTop: $(hash).offset().top
+        }, 800, function(){
+
+          // Add hash (#) to URL when done scrolling (default click behavior)
+          window.location.hash = hash;
+        });
+      } // End if
+    });
+  });
+  </script>
+
+
+
+
+</head>
+
+<body data-spy="scroll" data-target="#sidebar" data-offset="50">
+  <!-- need to fix scrollspy plugin problems -->
+
+
+  <!-- top navbar -->
+  <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="offcanvas" data-target=".sidebar-nav">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">CHEECHEE LIN</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row row-offcanvas row-offcanvas-left">
+
+      <!-- sidebar -->
+      <nav class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
+        <ul class="nav">
+          <li class="active"><a href="index.html">PORTFOLIO</a></li>
+          <!--  second anchor doesn't work
+          <ul class="subnav">
+          <li><a href="index.html">UX</a>
+          <li><a href="index.html#design">DESIGN</a>
+        </ul>
+      -->
+      <li><a href="about.html">ABOUT</a></li>
+      <li><a href="images/resume.pdf" target="_blank">RESUME</a></li>
+    </ul>
+    <ul id="footer">
+      <li>
+        <a class="social-icon" href="http://www.linkedin.com/in/cheecheelin" target="_blank">
+          <i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i>
+        </a>
+      </li>
+      <li>
+        <a class="social-icon" href="http://github.com/cheecheelin" target="_blank">
+          <i class="fa fa-github-square fa-2x" aria-hidden="true"></i>
+        </a>
+      </li>
+      <li>
+        <a class="social-icon" href="http://behance.net/cheecheelin" target="_blank">
+          <i class="fa fa-behance-square fa-2x" aria-hidden="true"></i>
+        </a>
+      </li>
+      <li>
+        <a class="social-icon" href="http://instagram.com/cheecheelin" target="_blank">
+          <i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
+        </a>
+      </li>
+      <!-- currently not updated icon
+      <li>
+      <a class="social-icon">
+      <i class="fa fa-medium fa-2x" aria-hidden="true"></i>
+    </a>
+  </li>
+-->
+</ul>
+</nav>
+
+<!-- main area -->
+<div class="col-xs-12 col-sm-9">
+
+  <section>
+    <h3> LA Hacks: Branding | UX/UI </h3>
+    <!-- PAPER JS DEMO GOES HERE -->
+    <div>
+      <canvas id="c" width="850" height="550"></canvas>
+      <script>
+      var canvas= new fabric.Canvas('c');
+      var rect = new fabric.Rect({
+        top: 200,
+        left: 350,
+        fill:'#ef3a5b',
+        stroke:'#ef3a5b',
+        strokeWidth: 5,
+        rx:17,
+        ry:17,
+        width:200,
+        height:200,
+      });
+      var rect2 = new fabric.Rect({
+        top: 70,
+        left: 120,
+        fill:'white',
+        stroke:'#69c8c3',
+        strokeWidth: 5,
+        rx:17,
+        ry:17,
+        width:300,
+        height:300,
+      });
+      var rect3 = new fabric.Rect({
+        top: 350,
+        left: 230,
+        fill:'white',
+        stroke:'#f4a51d',
+        strokeWidth: 5,
+        rx:17,
+        ry:17,
+        width:150,
+        height:150,
+      });
+      var rect4 = new fabric.Rect({
+        top: 150,
+        left: 500,
+        fill:'white',
+        stroke:'#39a1be',
+        strokeWidth: 5,
+        rx:17,
+        ry:17,
+        width:130,
+        height:130,
+      });
+
+
+      canvas.add(rect4);
+      canvas.add(rect2);
+      canvas.add(rect3);
+      canvas.add(rect);
+      fabric.Image.fromURL('script/lahacks.png', function(img){
+        img.setWidth(155);
+        img.setHeight(200);
+        img.setTop(170);
+        img.setLeft(390);
+        canvas.add(img);
+      });
+      </script>
+    </div>
+    <div>
+      <p style="text-align: center"> *This is a work in progress and will be fully launched by mid February. </p></br>
+    </div>
+    <div>
+      <h4>Background</h4>
+      <p>LA Hacks is one of the largest hackathons in the nation, hosted annually in the spring @UCLA. Each year, over a thousand hackers travel to SoCal to build out cool projects over the course of 48 hours.</p>
+      <p>This year, I was brought on board by one of my close friends &amp; Director of LA Hacks to help out with the design for this event. As part of the design team, I spearheaded two main initiatives: the design of the application portal, and working on improving the grading experience. The Design team also was in charge of the 2017 rebranding, which I'll go into more depth later.</p> </br>
+      <h4>Branding</h4>
+      <p><span style="font-weight: bold">The centerpiece</span>: Each year, LA Hacks rebrands itself to give itself a refresh. For 2017, the team decided our focus was to improve the overall experience of the hackathon-- and to bring in quality hacks. From a design standpoint, we wanted to convey the idea of "building". We iterated upon a couple of ideas, including construction, wireframing, legos, and building blocks, but we ultimately decided on using blocks to convey the idea of the basic building essentials that could transform into great projects. In the header above, I've included one of my early concepts of the idea of "building", using Paper JS to modify each block and allow these building blocks to be dragged around (try clicking and dragging!). Ultimately, we decided to go with a different visual look for the block, but the core idea remains the same.</p>
+      <p><span style="font-weight: bold">The colors</span>: As LA Hacks is a professional yet beginner friendly hackathon that brings in various top league recruits, the design team decided upon a bold and bright color scheme as to convey our welcoming vibe. We decided against gradients so as to keep our look uniform and usable across different mediums. </p>
+      <div class="projectimage">
+        <img src="images/uxportfolio/lahacks/blocks.png"/>
+      </div>
+    </br>
+    <h4>Overview of Application Flow Design</h4>
+    <p>I spearheaded the design for the application portal (both UI/UX and front end). In 2016, LA Hacks utilized Typeform to take in applications. While Typeform is a great tool for short surveys and has a beautiful interface on the applicant facing side, it presents many issues on the backend, especially when it comes to hackathon specific formfields, such as resumes uploaded in PDF format, paragraph formatted fields, and complex reimbursement processes.</p>
+    <p> The responses were also not easy to track and grade as each applicant was graded by at least 2 graders, which is why this year LA Hacks took on the task of designing a full stack solution that would be beneficial for both the applicant and the graders. The really exciting part about redesigning this flow-- as an applicant to various jobs/hackathons myself, I've experienced my fair share of terrible legacy job portals that are in dire need of a rethink of the process. What if applying/recruiting was an enjoyable process, with motivators throughout that could gamify the experience? Here's my v1 overview of tackling the redesign of the applicant side, and rethinking how we can make this entire process easier.</p>
+    <div class="projectimage">
+      <img src="images/uxportfolio/lahacks/flow.png"/>
+    </div>
+  </br>
+    <h4>The Process</h4>
+    <p>Before starting to sketch out ideas, I started out by sending out a survey to both applicants and graders. My initial surfing on Quora also led me to a quote by a recruiter: "As much as you hate filling out applications on poorly designed jobsites, we hate reading them on these legacy portals as well."</p>
+    <ul class="quote">
+      <li>Graders &amp; Applicants: What were some of the biggest painpoints of reading/grading last year?</li>
+      <li>Graders &amp; Applicants: What were some good things about the Typeform last year?</li>
+      <li>Graders: What would help streamline the process for grading?</li>
+      <li>Applicants: What are some painpoints in online forms for applications you fill out?</li>
+    </ul>
+    <p>I also conducted an over-skype interview with key members of the application grading team last year to understand their needs and painpoints further.</p>
+    <p>Through these discussions, I was able to identify the following barriers to last year's application process:</p>
+    <ul class="quote">
+      <li>Graders had to individually download resume PDFs for over 1500 applicants combined.</li>
+      <li>Graders were designated approximately 200 applications to grade each, but there was no built in tool to track the scores/acceptances/rejections on Typeform.</li>
+      <li>Applicants did not have a great way to opt in to team via Typeform, and a lot of it was done manually on the backend post-submission from the team at LAHacks. Team handling was way too messy for the graders.</li>
+      <li>Applications were not synced over to Google sheets and were not easy to read.</li>
+    </ul>
+    <p> From these points synthesised above, I indentified one major flow point that could be improved upon in the application flow (whilst the rest could be dealt with in the grader flow). By improving the team selection process, we could greatly improve the experiences for the applicants, and set the grading team up for success further along with well thought out team selection flows. Here are the key screens from this application portal:</p>
+    <div class="projectimage">
+      <img src="images/uxportfolio/lahacks/appscreens.jpg"/>
+    </div>
+
+
+
+
+
+
+
+</div>
+
+
+</section>
+
+</br></br></br>
+
+<!-- Read More Here -->
+<div>
+  <h6 style="text-align:center">More Projects </h6>
+  <ul id="rig">
+    <li>
+      <a class="rig-cell" target="_blank">
+        <img class="rig-img" src="images/uxportfolio/iri.jpg" />
+        <span class="rig-overlay"></span>
+        <span class="rig-text"><i class="fa fa-link" aria-hidden="true"></i></br>Internet Research Incubator</br> <span id="subtext"> UX Research on M-Commerce </br>Coming Soon </span></span>
+      </a>
+    </li>
+    <li>
+      <a class="rig-cell" target="_blank">
+        <img class="rig-img" src="images/uxportfolio/cheesquared.jpg" />
+        <span class="rig-overlay"></span>
+        <span class="rig-text"><i class="fa fa-link" aria-hidden="true"></i></br>Personal Website </br> <span id="subtext"> Front End Development &amp; Design </br>Coming Soon</span></span>
+      </a>
+    </li>
+  </ul>
+</div>
+
+
+</div>
+</body>
+
+</html>
 
 <html>
 <head>
-  <script src="script/jquery-3.1.1.min.js"></script>
-  <script src="script/fabric.min.js"></script>
+
 </head>
 <body>
-  <canvas id="c" width="1300" height="700"></canvas>
-  <script>
-  var canvas= new fabric.Canvas('c');
-  var rect = new fabric.Rect({
-    top: 200,
-    left: 500,
-    fill:'#ef3a5b',
-    stroke:'#ef3a5b',
-    strokeWidth: 5,
-    rx:17,
-    ry:17,
-    width:200,
-    height:200,
-  });
-  var rect2 = new fabric.Rect({
-    top: 70,
-    left: 270,
-    fill:'white',
-    stroke:'#69c8c3',
-    strokeWidth: 5,
-    rx:17,
-    ry:17,
-    width:300,
-    height:300,
-  });
-  var rect3 = new fabric.Rect({
-    top: 350,
-    left: 380,
-    fill:'white',
-    stroke:'#f4a51d',
-    strokeWidth: 5,
-    rx:17,
-    ry:17,
-    width:150,
-    height:150,
-  });
-  var rect4 = new fabric.Rect({
-    top: 150,
-    left: 650,
-    fill:'white',
-    stroke:'#39a1be',
-    strokeWidth: 5,
-    rx:17,
-    ry:17,
-    width:130,
-    height:130,
-  });
 
-
-
-
-  canvas.add(rect4);
-  canvas.add(rect2);
-  canvas.add(rect3);
-  canvas.add(rect);
-  fabric.Image.fromURL('script/lahacks.png', function(img){
-    img.setWidth(155);
-    img.setHeight(200);
-    img.setTop(170);
-    img.setLeft(540);
-    canvas.add(img);
-  });
-
-
-  </script>
 </body>
 </html>
