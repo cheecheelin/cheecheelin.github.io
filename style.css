@@ -1,5 +1,5 @@
 body {
-  padding-top: 51px;
+  padding-top: 50px;
   font-family: "Oxygen", sans-serif;
   position: relative;
 }
@@ -117,6 +117,8 @@ ul ul li a:hover{
 .navbar-brand{
   font-size: 24px; /*36px;*/
   font-weight: 600;
+  padding: 0px 15px;
+  height:65px;
   color:#4A4A4A;
   font-family: "Oxygen","Pacifico";
   letter-spacing:2px;
