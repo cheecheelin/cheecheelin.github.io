@@ -257,9 +257,9 @@ object {
   padding-top:30px;
   float:left;
 }
-.img-circle{
-  width:260px;
-  height:260px;
+.img-square{
+  width:450px;
+  height:450px;
 }
 /*.rectangle{
   width:250px;
@@ -272,20 +272,20 @@ h2{
   font-size: 20px;
 }
 #sayhi{
-  padding-left: 300px;
+  padding-left: 500px;
 }
 
 p{
   color: #4A4A4A;
 }
 @media (max-width: 550px){
-  .img circle{
+  .img-square{
     width:350px;
     height:350px;
   }
   #hello{
     padding-top:30px;
-    padding-left:15%;
+    padding-left:0%;
     display: block;
     margin: 0 auto;
     float: none;
