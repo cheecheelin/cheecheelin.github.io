@@ -351,4 +351,5 @@ h6{
 .myvid{
   margin: auto;
   margin-left:30%;
+  box-shadow: -1px 1px 5px #888;
 }
