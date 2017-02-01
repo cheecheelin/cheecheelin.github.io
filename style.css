@@ -347,3 +347,8 @@ h6{
 
 /* adding in slideshow */
 .mySlides {display:none;}
+
+.myvid{
+  margin: auto;
+  margin-left:30%;
+}
