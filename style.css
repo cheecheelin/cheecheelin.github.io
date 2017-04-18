@@ -5,12 +5,17 @@
   border-width: 0px;
   padding-bottom: 0px;
   width: 100%;
-  top:0;
+  padding-top:0;
   z-index:100;
   /* position: fixed; */
 }
 .navbar-default .navbar-collapse{
   border-color: #FFFFFF;
+}
+
+.navbar-toggle{
+  margin-top:6%;
+  margin-bottom:6%;
 }
 
 /* if i use svg logo instead of text*/
@@ -22,7 +27,7 @@
   font-size: 24px; /*36px;*/
   font-weight:600;
   padding: 20px 20px;
-  padding-left: 50px;
+  padding-left: 40%;
   height:50px;
   font-family: "Karla",sans-serif;
   letter-spacing:2px;
@@ -68,7 +73,7 @@ h1{
   color:#000000;
   font-family: "Karla", sans-serif;
   font-size: 36px;
-  padding-left: 50px;
+  padding-left: 5%;
   padding-top: 15%;
   font-weight: bold;
 }
@@ -77,7 +82,8 @@ h2{
   color: #000000;
   font-family: "Karla", sans-serif;
   font-size:16px;
-  padding-left:50px;
+  padding-left:5%;
+  padding-right: 5%;
   max-width: 600px;
   line-height: 1.5em;
 }
@@ -109,6 +115,8 @@ h5{
   font-size: 24px;
   padding-top: 0%;
   padding-bottom: 2%;
+  padding-left: 5%;
+  padding-right: 5%;
   font-weight: bold;
 }
 
@@ -118,11 +126,13 @@ p{
   font-family: "Karla", sans-serif;
   font-size:16px;
   max-width: 700px;
+  padding-left: 5%;
+  padding-right: 5%;
   line-height: 1.5em;
 }
 #mysocial{
   padding-top:20px;
-  padding-left:45px;
+  padding-left:4%;
   text-align: left;
 }
 #mysocial li{
@@ -225,7 +235,6 @@ div.panel h2{
 
 #ux{
   padding-top:120px;
-  padding-left: 20px;
 }
 
 .projectimage img{
@@ -274,10 +283,12 @@ div.panel h2{
 #rig {
     max-width:100%;
     margin:0 auto; /*center aligned*/
-    padding:0;
+    padding-left: 2%;
+    padding-right: 2%;
     font-size:0; /* Remember to change it back to normal font size if have captions */
     list-style:none;
     background-color:#ffffff;
+    text-align: center;
 }
 #rig li {
     display: inline-block;
@@ -285,7 +296,7 @@ div.panel h2{
     width:25%;
     vertical-align:middle;
     box-sizing:border-box;
-    margin:20px;
+    margin:2%;
     padding:0;
 }
 .rig-text {
