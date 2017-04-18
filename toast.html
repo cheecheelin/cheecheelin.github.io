@@ -1,220 +1,194 @@
 <!DOCTYPE HTML>
+<!-- Hey there, what's up. Thanks for visiting :) Interested in collaborating? Shoot me a message at cheecheelin[at]ucla[dot]edu. I like working on challenging design problems, and always love meeting new people! -->
+
 <html lang="en">
 <head>
-  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Cheechee Lin</title>
-  <link rel="shortcut icon" type="image/x-icon" href="images/chee.ico">
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Cheechee Lin</title>
+	<link rel="shortcut icon" type="image/x-icon" href="images/chee.ico">
 
-  <!-- CSS -->
-  <link href="https://fonts.googleapis.com/css?family=Hind" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
-  <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="style.css" rel="stylesheet" >
-
-
-  <!-- icons -->
-  <script src="https://use.fontawesome.com/1143472ed2.js"></script>
+	<!-- for facebook link sharing -->
+	<meta property="og:url"                content="http://www.chee.design" />
+	<meta property="og:title"              content="Cheechee Lin Design Portfolio" />
+	<meta property="og:description"        content="Design Portfolio of Cheechee Lin - Product Designer, UX UI Designer based in Los Angeles, California." />
+	<meta property="og:image"              content="images/max.jpg" />
 
 
-  <!-- Bootstrap-->
-  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-  <!--[if lt IE 9]>
-  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-  <![endif]-->
-  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <!-- Include all compiled plugins (below), or include individual files as needed -->
-  <script src="bootstrap/js/bootstrap.min.js"></script>
+	<!-- CSS -->
+	<link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+	<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link href="style.css" rel="stylesheet" >
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 
-  <!-- Google Analytics Tracking Code -->
-  <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	<!-- Smooth Scrolling Barba -->
+	<script src="barba.min.js" type="text/javascript"></script>
 
-  ga('create', 'UA-52353413-1', 'auto');
-  ga('send', 'pageview');
-  </script>
+	<!-- Bootstrap-->
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+	<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src="bootstrap/js/bootstrap.min.js"></script>
 
-  <script>
-  $(document).ready(function() {
-    $('[data-toggle=offcanvas]').click(function() {
-      $('.row-offcanvas').toggleClass('active');
-    });
-  });
-  </script>
+	<!-- Google Analytics Tracking Code -->
+	<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-  <!-- smooth scrolling -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <script>
-  $(document).ready(function(){
-    // Add smooth scrolling to all links
-    $("a").on('click', function(event) {
+	ga('create', 'UA-52353413-1', 'auto');
+	ga('send', 'pageview');
+	</script>
 
-      // Make sure this.hash has a value before overriding default behavior
-      if (this.hash !== "") {
-        // Prevent default anchor click behavior
-        event.preventDefault();
+	<script>
+	$(document).ready(function() {
+		$('[data-toggle=offcanvas]').click(function() {
+			$('.row-offcanvas').toggleClass('active');
+		});
+	});
+	</script>
 
-        // Store hash
-        var hash = this.hash;
 
-        // Using jQuery's animate() method to add smooth page scroll
-        // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-        $('html, body').animate({
-          scrollTop: $(hash).offset().top
-        }, 800, function(){
+	<!-- smooth scrolling -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script>
+	$(document).ready(function(){
+		// Add smooth scrolling to all links
+		$("a").on('click', function(event) {
 
-          // Add hash (#) to URL when done scrolling (default click behavior)
-          window.location.hash = hash;
-        });
-      } // End if
-    });
-  });
-  </script>
+			// Make sure this.hash has a value before overriding default behavior
+			if (this.hash !== "") {
+				// Prevent default anchor click behavior
+				event.preventDefault();
+
+				// Store hash
+				var hash = this.hash;
+
+				// Using jQuery's animate() method to add smooth page scroll
+				// The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+				$('html, body').animate({
+					scrollTop: $(hash).offset().top
+				}, 800, function(){
+
+					// Add hash (#) to URL when done scrolling (default click behavior)
+					window.location.hash = hash;
+				});
+			} // End if
+		});
+	});
+
+	</script>
 
 
 
 
 </head>
 
-<body data-spy="scroll" data-target="#sidebar" data-offset="50">
-  <!-- need to fix scrollspy plugin problems -->
+<body>
+	<nav class="navbar navbar-default" role="navigation">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="index.html"><img style="width:85px; height:auto" src="logo_new.svg"/></a>
+			<!-- <a class="navbar-brand" href="#" >Cheechee Lin</a> -->
+		</div>
+		<div class="navbar-collapse collapse">
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="index.html">Work</a></li>
+				<li><a class="accordion">About </a></li>
+			</ul>
+		</div>
+	</nav>
+
+	<!-- need to have this on every page to keep consistent about section -->
+	<div class="panel" id="expandthis">
+		<h2> Hey, nice to meet you! </h2>
+		<h2>I'm Cheechee - Product Designer, Techie, and Frequent Flyer. I'm powered by boba and adventures. </h2>
+
+		<h2> Design, to me, is about solving problems. I'm absolutely invigorated by challenges that aim to tackle real world problems, and I believe in grounding design decisions in research.</h2>
+
+		<h2>I've lived in many places, including San Jose, Taipei, Los Angeles, London, and San Francisco. Having spent a decade in Asia and another decade in the US, I've had the opportunity to see the juxtaposition between East and West firsthand. </h2>
+
+		<h2>When I'm not at work, you can find me exploring new places + adventuring in the great outdoors. Most recently, I was in Barcelona, Tokyo, then Thailand.</h2>
 
 
-  <!-- top navbar -->
-  <div class="navbar navbar-default navbar-fixed-top" role="navigation">
-    <div class="container">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="offcanvas" data-target=".sidebar-nav">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="index.html"><img style="width:120px; height:auto" src="logo.svg"/></a>
-      </div>
-    </div>
-  </div>
+		<h2>I'm always down to collaborate on interesting projects or meet new people. Drop me a line <a href="mailto:cheecheelin@ucla.edu">here</a> or <a target="blank" href="https://www.upwork.com/o/profiles/users/_~01a44089c5c2c7c0e0/">hire me as a freelancer</a>!</h2>
 
-  <div class="container">
-    <div class="row row-offcanvas row-offcanvas-left">
+		<h3> View my resume <a href="resume.pdf" target=
+			"_blank">here</a> // Explore the world with me <a href="http://instagram.com/cheecheelin" target=
+			"_blank">here</a> // Passion project <a href="http://elepantsy.com" target="_blank">here</a> </h3>
+		</div>
 
-      <!-- sidebar -->
-      <nav class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
-        <ul class="nav">
-          <li class="active"><a href="index.html">PORTFOLIO</a></li>
-          <!--  second anchor doesn't work
-          <ul class="subnav">
-          <li><a href="index.html">UX</a>
-          <li><a href="index.html#design">DESIGN</a>
-        </ul>
-      -->
-      <li><a href="about.html">ABOUT</a></li>
-      <li><a href="resume.pdf" target="_blank">RESUME</a></li>
-    </ul>
-    <ul id="footer">
-      <li>
-        <a class="social-icon" href="http://www.linkedin.com/in/cheecheelin" target="_blank">
-          <i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i>
-        </a>
-      </li>
-      <li>
-        <a class="social-icon" href="http://github.com/cheecheelin" target="_blank">
-          <i class="fa fa-github-square fa-2x" aria-hidden="true"></i>
-        </a>
-      </li>
-      <li>
-        <a class="social-icon" href="http://behance.net/cheecheelin" target="_blank">
-          <i class="fa fa-behance-square fa-2x" aria-hidden="true"></i>
-        </a>
-      </li>
-      <li>
-        <a class="social-icon" href="http://instagram.com/cheecheelin" target="_blank">
-          <i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
-        </a>
-      </li>
-      <!-- currently not updated icon
-      <li>
-        <a class="social-icon">
-          <i class="fa fa-medium fa-2x" aria-hidden="true"></i>
-        </a>
-      </li>
-    -->
-    </ul>
-  </nav>
 
-  <!-- main area -->
-  <div class="col-xs-12 col-sm-9">
 
-    <section>
-    </br>
-      <h3> Toast Design Challenge </h3>
-      <div class="projectimage">
-        <img src="images/uxportfolio/toast/toastcover.jpg"/>
-      </div>
-      <div>
-        <h4>The Challenge</h4>
-        <p>As part of my interview process, I was asked to redesign the Toast workflow.</p>
-        <p>note: I designed these tablet screens with the Google Material Design guidelines in mind, as the Toast POS works via a Samsung tablet. </p>
-      </br>
-        <h4>The Flow</h4>
-        <p>I decided to tackle two main flows, ordering and seating. I chose these two flows because of my limitations in user base sample, and these two flows interface somewhat with customers. As I do not have contacts who currently use the Toast POS, I decided that I would base my initial design off of users that either a) had experience in ordering at restaurants or b) served as a waiter in a restaurant. Below, I've included a high level overview of my end result. </p>
-        <div class="projectimage">
-          <img src="images/uxportfolio/toast/flow1.png"/>
-        </div>
-        <div class="projectimage">
-          <img src="images/uxportfolio/toast/flow2.png"/>
-        </div>
+		<!-- introductions -->
+		<section>
+			<div style="text-align: center;">
+				<h4>Reimagining the Restaurant Experience</h4>
+				<img width="50%" src="images/uxportfolio/toast/toastcover.jpg">
+				</br>
 
-      </br>
-        <h4>In Depth Interviews</h4>
-        <p>To tackle these two flows, I first had to identify <span style="font-weight: bold"> what problem I was trying to solve</span>. I've included two main personas below: the first being a hungry customer waiting at a restaurant, and the second someone who works in the food service industry.</p></br>
-        <!-- ENTER PERSONA IMAGE HERE -->
-        <h4>Persona Based User Case Scenario: Seating Flow</h4>
-        <p><span style="font-weight: bold">(Problem)</span> Customers of the restaurant often arrive at a restaurant hungry and have to endure a long wait to get their food. There is a lack of perceived transparency for wait time between restaurant and customer. </br> <span style="font-weight: bold">(Problem)</span> Waiters at the restaurant input the customer's name and do not have an efficient way of allocating empty tables and estimating accurate wait time to the customers, which starts a stressful cycle of customers being impatient and continuously checking to see what place they are on the list</p>
-        <p><span style="font-weight: bold">(Design Opportunity)</span> If we can improve this flow and accurately gauge wait times as well as streamline the seating process, customers satisfaction will increase and waiters will also be able to focus on serving the customers rather than managing the wait time. </p>
-        <p><span style="font-weight: bold">(Entry Point)</span> Waiters will be empowered through the Toast POS and subsequently be able to inform customers accurately of their wait status and seat them efficiently. A future extension of the implementation could be through a screen that displays necessary information to the restaurant customers as well. </p></br>
+				<div style="display: inline-block; text-align: left">
+					<h5>The Challenge </h5>
+					<p>Ever arrive at a restaurant only to put your name down and have an hour estimated waiting time? What if waiting in line for a restaurant was a much smoother, stress free experience? In this challenge, I aimed to tackle two main flows: ordering and seating, to eliminate the stress of waiting hungrily. </p>
+				</br>
+				</div>
+			</div>
 
-        <h4>Wireframe Sketches: Seating Flow</h4>
-        <p>Wireframe sketches were made to outline the general flow and gestures needed to complete this seating flow. Some important features that would help ease the uncertainty between customer/waiter included an estimated time to be seated timer, and a timestamp that would allow the waiter to have an overview of the time that customers have been waiting. In addition, a seating map that would display the available tables would also be included.</p>
-        <div class="projectimage">
-          <img src="images/uxportfolio/toast/sketch.jpg"/>
-        </div>
-        <h4>Low Fidelity Mockups &amp; Motion: Seating Flow</h4>
-        <p>To test out my initial direction with the seating flow, I created low fidelity mockups as well as a clickable prototype in Principle with minimal elements to see if the flow made sense to users.</p>
-        <video width="100%" autoplay controls loop>
-          <source src="images/uxportfolio/toast/imtoast.mp4" type="video/mp4" >
-        </video>
-        <p>Initial feedback included: a) the waiter might be moving around as he/she is assigning people to tables, so drag might not be the best option b) time of arrival might not be as beneficial information as time elapsed.</p></br>
+			<div style="text-align: center;">
+				<div style="display: inline-block; text-align: left">
+					<h5>Persona Based User Case Scenario: Seating Flow</h5>
+					<p><span style="font-weight: bold">(Problem)</span> Customers of the restaurant often arrive at a restaurant hungry and have to endure a long wait to get their food. There is a lack of perceived transparency for wait time between restaurant and customer. </br> </p>
+						<p><span style="font-weight: bold">(Problem)</span> Waiters at the restaurant input the customer's name and do not have an efficient way of allocating empty tables and estimating accurate wait time to the customers, which starts a stressful cycle of customers being impatient and continuously checking to see what place they are on the list.</p>
+					<p><span style="font-weight: bold">(Design Opportunity)</span> If we can improve this flow and accurately gauge wait times as well as streamline the seating process, customers satisfaction will increase and waiters will also be able to focus on serving the customers rather than managing the wait time. </p>
+				<p><span style="font-weight: bold">(Entry Point)</span> Waiters will be empowered through the Toast POS and subsequently be able to inform customers accurately of their wait status and seat them efficiently.</p>
+			</br>
+				</div>
+				<img width ="100%" src="images/uxportfolio/toast/flow1.png"/>
+				<img style="padding-top: 7%; padding-bottom: 7%;" width ="70%" src="images/uxportfolio/toast/seatingscreens.jpg"/>
+			</div>
+			<div style="text-align: center;">
+				<div style="display: inline-block; text-align: left">
+				</br>
+					<h5>Persona Based User Case Scenario: Ordering Flow</h5>
+					<p>Now that I had gotten an MVP of the seating flow tested, I moved on to the ordering flow-- a much more complex flow with many nuances.</p>
+	        <p><span style="font-weight: bold">(Problem)</span> For customers at the restaurant, the ordering process is oftentimes riddled with overwhelming choices. When the waiter appears at the table, customers may decide they want one thing initially, but after ordering and hearing what other people are ordering, they may decide to change their order. Even when an order is already processed, there's also a chance that the customer may suddenly desire to cancel their order.</p>
+	        <p><span style="font-weight: bold">(Problem)</span> For waiters, the confusing decision making process that customers go through also befuddles the waiter taking the order. In addition to customers potentially talking out of order and interjecting additional orders, waiters also have to keep track of specific order details such as additional condiments, spice levels, etc.</p>
+	        <p><span style="font-weight: bold">(Design Opportunity)</span> If we can simplify the ordering process and give waiters the power to take orders in a similar fashion to having a conversation, in addition to the power to modify each order as he/she proceeds, this will allow the waiter to be more efficient. In addition, if waiters are able to check on the status of each meal without running to and fro the kitchen, this will also increase transparency in when the meal will be served. </p>
+	        <p><span style="font-weight: bold">(Entry Point)</span> Waiters will be empowered through the Toast POS and be able to take orders as though they're transcribing a conversation. Waiters will also be able to view the status of each meal, accurately informing customers of status as they modify each order on the go.</p></br>
+				</div>
+				<img width ="100%" src="images/uxportfolio/toast/flow2.png"/>
+				<img width ="60%" style="padding-top: 7%; padding-bottom: 7%;" src="images/uxportfolio/toast/orderscreens.jpg"/>
+			</div>
 
-        <h4>Incorporating Feedback &amp; High Fidelity Mockups: Seating Flow</h4>
-        <div class="projectimage">
-          <img src="images/uxportfolio/toast/seatingscreens.jpg"/>
-        </div>
-        <p>I added in elements of Toast's branding as well as changed the interaction element from drag to tap to reflect the feedback received. </p> </br>
 
-        <!-- Ordering Flow Begins Here -->
-        <h4>Persona Based User Case Scenario: Ordering Flow </h4>
-        <p>Now that I had gotten an MVP of the seating flow tested, I moved on to the ordering flow-- a much more complex flow with many nuances.</p>
-        <p><span style="font-weight: bold">(Problem)</span> For customers at the restaurant, the ordering process is oftentimes riddled with overwhelming choices. When the waiter appears at the table, customers may decide they want one thing initially, but after ordering and hearing what other people are ordering, they may decide to change their order. Even when an order is already processed, there's also a chance that the customer may suddenly desire to cancel their order.</p>
-        <p><span style="font-weight: bold">(Problem)</span> For waiters, the confusing decision making process that customers go through also befuddles the waiter taking the order. In addition to customers potentially talking out of order and interjecting additional orders, waiters also have to keep track of specific order details such as additional condiments, spice levels, etc.</p>
-        <p><span style="font-weight: bold">(Design Opportunity)</span> If we can simplify the ordering process and give waiters the power to take orders in a similar fashion to having a conversation, in addition to the power to modify each order as he/she proceeds, this will allow the waiter to be more efficient. In addition, if waiters are able to check on the status of each meal without running to and fro the kitchen, this will also increase transparency in when the meal will be served. </p>
-        <p><span style="font-weight: bold">(Entry Point)</span> Waiters will be empowered through the Toast POS and be able to take orders as though they're transcribing a conversation. Waiters will also be able to view the status of each meal, accurately informing customers of status as they modify each order on the go.</p></br>
+			<div style="text-align: center;">
+				<h5><a href="adobe.html">View next project <i class="fa fa-arrow-right" aria-hidden="true"></i> </a></h5>
+			</div>
 
-        <h4>Wireframe Sketches: Ordering Flow</h4>
-        <div class="projectimage">
-          <img src="images/uxportfolio/toast/sketch2.jpg"/>
-        </div> </br>
-        <h4>High Fidelity Mockups and Motion: Ordering Flow</h4>
-        <div class="projectimage">
-          <img src="images/uxportfolio/toast/orderscreens.jpg"/>
-        </div>
+		</section>
+
+
+
+
+
+
+		<!-- script references -->
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/scripts.js"></script>
 
 
 
@@ -224,34 +198,31 @@
 
 
 
-      </div>
-    </section>
+		<!-- footer section -->
+		<footer>
+		</footer>
 
-</br></br></br>
+	</body>
 
-<!-- Read More Here -->
-  <div>
-    <h6 style="text-align:center">More Projects </h6>
-    <ul id="rig">
-      <li>
-        <a class="rig-cell" href="adobe.html">
-          <img class="rig-img" src="images/uxportfolio/adobe.jpg" />
-          <span class="rig-overlay"></span>
-          <span class="rig-text"><i class="fa fa-link" aria-hidden="true"></i></br>Adobe Optimization Consulting </br> <span id="subtext">Data Driven A/B Testing &amp; Multivariate Testing </span></span>
-        </a>
-      </li>
-      <li>
-        <a class="rig-cell" href="lahacks.html">
-          <img class="rig-img" src="images/uxportfolio/lahacksapp.jpg" />
-          <span class="rig-overlay"></span>
-          <span class="rig-text"><i class="fa fa-link" aria-hidden="true"></i></br>LA Hacks 2017 Design</br> <span id="subtext"> UX | Branding | Graphics </br>Work In Progress, View App Flow Design</span></span>
-        </a>
-      </li>
-    </ul>
-  </div>
+	<!-- accordion expansion -->
+	<script>
+	var acc = document.getElementsByClassName("accordion");
+	var i;
 
+	for (i = 0; i < acc.length; i++) {
+		acc[i].onclick = function() {
+			this.classList.toggle("active");
+			var panel = document.getElementById("expandthis");
+			if (panel.style.maxHeight){
+				panel.style.maxHeight = null;
+			} else {
+				panel.style.maxHeight = panel.scrollHeight + "px";
+			}
+		}
+	}
+	</script>
 
-</div>
-</body>
-
-</html>
+	<script>
+	Barba.Pjax.start();
+	</script>
+	</html>
