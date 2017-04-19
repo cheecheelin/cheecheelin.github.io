@@ -151,7 +151,7 @@ p{
 
 .social-icon i:hover{
   transform:scale(1.4);
-  color: #00E4C9;
+  color: #D25F66;
 }
 
 /* for links in introduction section */
@@ -161,11 +161,11 @@ a{
 }
 
 a:hover {
-  color: #00E4C9;
+  color: #D25F66;
 }
 
 a:active {
-  color: #00E4C9;
+  color: #D25F66;
 }
 a:visited {
   color: black;
@@ -200,7 +200,7 @@ a.accordion:after {
 
 a.accordion.active:after {
     content: "\2212";
-    color: #00E4C9;
+    color: #D25F66;
     font-size: 1.2em;
 }
 
