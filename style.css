@@ -70,7 +70,7 @@ body {
 }
 
 h1{
-  color:#000000;
+  color:#1a1a1a;
   font-family: "Karla", sans-serif;
   font-size: 36px;
   padding-left: 5%;
@@ -79,7 +79,7 @@ h1{
 }
 
 h2{
-  color: #000000;
+  color: #1a1a1a;
   font-family: "Karla", sans-serif;
   font-size:16px;
   padding-left:5%;
@@ -122,7 +122,7 @@ h5{
 
 p{
   /*same as h2 but using p for project template */
-  color: #000000;
+  color: #1a1a1a;
   font-family: "Karla", sans-serif;
   font-size:16px;
   max-width: 700px;
