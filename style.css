@@ -125,6 +125,27 @@ h5{
   font-weight: bold;
 }
 
+.button{
+   background-color: white;
+   border: solid;
+   border-radius: 20px;
+   border-color: #253238;
+   border-width:2px;
+   color: #253238;
+   padding: 5px 10px;
+   text-align: center;
+   text-decoration: none;
+   display: inline-block;
+   font-size: 16px;
+   margin: 4px 0px;
+   cursor: pointer;
+}
+
+.button:hover{
+  background-color: #d3d3d3;
+  color: #253238;
+  text-decoration: none;
+}
 p{
   /*same as h2 but using p for project template */
   color: #1a1a1a;
