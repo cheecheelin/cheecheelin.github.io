@@ -73,26 +73,21 @@ h1{
   color:#1a1a1a;
   font-family: "Karla", sans-serif;
   font-size: 36px;
+  padding-left: 5%;
+  padding-top: 10%;
   font-weight: bold;
-  padding-top: 2%;
 }
 
 h2{
   color: #1a1a1a;
   font-family: "Karla", sans-serif;
   font-size:16px;
-  max-width: 500px;
-  margin: 0 auto;
-  text-align: center;
+  padding-left:5%;
+  padding-right: 5%;
+  max-width: 700px;
   line-height: 1.5em;
 }
 
-h6{
-  color: #1a1a1a;
-  font-family: "Karla", sans-serif;
-  font-size:16px;
-  line-height: 1.5em;
-}
 
 h3{
   font-family: "Karla", sans-serif;
@@ -137,8 +132,8 @@ p{
 }
 #mysocial{
   padding-top:20px;
-  padding-left:0px;
-
+  padding-left:4%;
+  text-align: left;
 }
 #mysocial li{
     display: inline-block;
@@ -239,7 +234,7 @@ div.panel h2{
 }
 
 #ux{
-  padding-top:5%;
+  padding-top:7%;
 }
 
 .projectimage img{
