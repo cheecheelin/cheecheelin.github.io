@@ -483,6 +483,9 @@ div.panel h2{
     #rig li {
         width:45%;
     }
+    #chee{
+      margin-top:7%;
+    }
 }
 
 
@@ -490,16 +493,34 @@ div.panel h2{
     #rig li {
         width:90%;
     }
+    #chee{
+      margin-top:9%;
+    }
 }
 
 @media (max-width: 800px) {
     #rig li {
         width:90%;
     }
+    #chee{
+      margin-top:12%;
+    }
 }
 @media (max-width: 550px) {
     #rig li {
         width:90%;
+    }
+    #chee{
+      margin-top:20%;
+    }
+}
+
+@media (max-width: 375px) {
+    #rig li {
+        width:90%;
+    }
+    #chee{
+      margin-top:25%;
     }
 }
 
