@@ -127,14 +127,41 @@ h5{
   font-weight: bold;
 }
 
+h6{
+  /*same as h2 but using p for project template */
+  color: #1a1a1a;
+  font-family: "Karla", sans-serif;
+  font-size:24px;
+  line-height: 1.5em;
+  margin-bottom: 2%;
+}
+
+.tags{
+  background-color: #d3d3d3;
+  border: none;
+  border-radius: 20px;
+  color: #253238;
+  padding: 5px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  margin: 5px 5px 15px 5px;
+}
+
+.hpdescription{
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 1%;
+}
 .button{
-   background-color: white;
+   background-color: #FFE4DF;
    border: solid;
    border-radius: 20px;
    border-color: #253238;
    border-width:2px;
    color: #253238;
-   padding: 5px 10px;
+   padding: 5px 20px;
    text-align: center;
    text-decoration: none;
    display: inline-block;
@@ -143,11 +170,69 @@ h5{
    cursor: pointer;
 }
 
+
+
 .button:hover{
-  background-color: #FFE4DF;
-  color: #253238;
+  background-color: #253238;
+  color: white;
   text-decoration: none;
 }
+
+.button2{
+   background-color: white;
+   border: solid;
+   border-radius: 20px;
+   border-color: #253238;
+   border-width:2px;
+   color: #253238;
+   padding: 5px 20px;
+   text-align: center;
+   text-decoration: none;
+   display: inline-block;
+   font-size: 16px;
+   margin: 4px 0px;
+   cursor: pointer;
+}
+
+.button2:hover{
+  background-color: #253238;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+/*linebreak styling */
+.newsection{
+  width:75%;
+  height: 12px;
+  border-bottom: 2px solid #D8D8D8;
+  text-align: left;
+  margin: 0 auto;
+  text-transform:uppercase;
+  font-weight: bold;
+}
+
+.hpcontent{
+  width: 100%;
+  text-align:center;
+  display: inline-block;
+  padding-top: 3%;
+}
+
+.projdivider{
+  width: 65%;
+  margin-top: 4%;
+}
+
+footer {
+    margin: 2% auto;
+    background-color: white;
+    text-align: center;
+    height:10px;
+}
+
+
+
+
 p{
   /*same as h2 but using p for project template */
   color: #1a1a1a;
