@@ -415,135 +415,62 @@ div.panel h2{
 
 
 
-/* GRID */
-#rig {
-    max-width:100%;
-    margin:0 auto; /*center aligned*/
-    padding-left: 2%;
-    padding-right: 2%;
-    font-size:0; /* Remember to change it back to normal font size if have captions */
-    list-style:none;
-    background-color:#ffffff;
-    text-align: center;
-}
-#rig li {
-    display: inline-block;
-    *display:inline;/*for IE6 - IE7*/
-    width:25%;
-    vertical-align:middle;
-    box-sizing:border-box;
-    margin:2%;
-    padding:0;
-}
-.rig-text {
-    display:block;
-    padding:0 30px;
-    box-sizing:border-box;
-    position:absolute;
-    left:0;
-    width:100%;
-    text-align:center;
-    text-transform:capitalize;
-    font-size:18px;
-    top:40%;
-    color:white;
-    opacity:0;
-    filter:alpha(opacity=0);/*For older IE*/
-    transform:translateY(-20px);
-    transition:all .3s;
-    font-family: "Karla", sans-serif;
-}
-
-
-/* The wrapper for each item */
-.rig-cell {
-    /*margin:12px;
-    box-shadow:0 0 6px rgba(0,0,0,0.3);*/
-    display:block;
-    position: relative;
-    overflow:hidden;
-}
-
-/* If have the image layer */
-.rig-img {
-    display:block;
-    width: 100%;
-    height: auto;
-    border:none;
-    transform:scale(1);
-    transition:all 1s;
-}
-
-#rig li:hover .rig-img {
-    transform:scale(1.05);
-}
-
-/* If have the overlay layer */
-.rig-overlay {
-    position: absolute;
-    display:block;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    margin: auto;
-    background: #4A4A4A no-repeat center 40%;
-    background-size:50px 50px;
-    opacity:0;
-    filter:alpha(opacity=0);/*For IE6 - IE8*/
-    transition:all 0.6s;
-}
-#rig li:hover .rig-overlay {
-    opacity:0.8;
-}
-
-#rig li:hover .rig-text {
-    transform:translateY(0px);
-    opacity:0.9;
-}
 
 @media (max-width: 9000px) {
-    #rig li {
-        width:45%;
-    }
     #chee{
       margin-top:7%;
     }
+    .desktop{
+      width: 55%;
+    }
+
+    .mobile{
+      width: 20%;
+    }
+
+
 }
 
 
 @media (max-width: 1200px) {
-    #rig li {
-        width:90%;
-    }
     #chee{
       margin-top:9%;
     }
 }
 
 @media (max-width: 800px) {
-    #rig li {
-        width:90%;
-    }
     #chee{
       margin-top:12%;
     }
+    .desktop{
+      width:70%;
+    }
+    .mobile{
+      width:40%;
+    }
 }
 @media (max-width: 550px) {
-    #rig li {
-        width:90%;
-    }
     #chee{
       margin-top:20%;
     }
+    .desktop{
+      width:90%;
+    }
+    .mobile{
+      width:50%;
+    }
+
 }
 
 @media (max-width: 375px) {
-    #rig li {
-        width:90%;
-    }
     #chee{
       margin-top:25%;
+    }
+    .desktop{
+      width:90%;
+    }
+    .mobile{
+      width:70%;
     }
 }
 
