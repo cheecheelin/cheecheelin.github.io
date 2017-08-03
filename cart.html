@@ -127,12 +127,52 @@
 				<p>As an NEA Design Fellow, I had the opportunity to work at one of their portfolio companies, ThirdLove, as a product design intern. ThirdLove's mission is to empower women to #breakthemold. By helping women find their best fitting bra, ThirdLove hopes to give women the confidence to be their best selves.</p>
 				<p>ThirdLove prides itself on the fit of its bras, and the seamless feeling of wearing one of their bras. However, their shopping experience-- in particular the shopping cart experience-- was clunky and did not fit the brand standards. In addition, there were business needs that our current cart did not fulfill. </p>
 				<p>Upon the first two weeks of joining ThirdLove, I embarked on the journey to ease pain points throughout the shopping experience, starting with improving the cart experience, whilst paying heed to the business interests at hand.</p>
+
+			</br>
+
+			<p><span style = "background-color: #f8ede7"><strong>Business Goals:</strong> How may we increase conversion + increase AOV (average order value) across the site?</span></p>
+			<p><span style = "background-color: #f8ede7"><strong>Customer Goals:</strong> How can we smooth out friction points and increase customer satisfaction?</span></p>
 			</div>
 		</div>
+
+		<div style="text-align: center; padding-top:2%">
+			<div style="display: inline-block; text-align: left;">
+				<h5>Understanding Data- Quantitative</h5>
+				<p>I utilized Heap’s funnel analysis report (alongside our data scientist) to analyze following data over the most recent 3 month period. As we were particularly interested in lifting the conversion rate, I dug specifically into a specific conversion flow across the site: the purchase funnel. </p>
+				<p>The purchase funnel can be broken down into a set of four key actions, as seen below in the diagram. (Click checkout refers to the current CTA on the flyover cart, which pops up every time a user adds an item to their cart.) I’ve segregated the traffic between mobile and desktop-- an important distinction because mobile suffers from smaller screen real estate, yet constitutes nearly 70% of our traffic. </p>
+			</div>
+		</div>
+
+
+		<div style="text-align: center;">
+			<img width ="100%" src="images/uxportfolio/shoppingcart/flowchart.jpg"/>
+		</div>
+
+		<div style="text-align: center; padding-top:2%">
+			<div style="display: inline-block; text-align: left;">
+				<p>As can be seen in the graph above, mobile sees <strong>less conversion</strong> on all three major friction points. Yet what was most interesting was the second friction point: mobile experienced a 41.28% rate of success from “add to cart” > “click checkout”, whereas desktop users had a much higher rate of 65.09%. This discrepancy in success rate was quite strange, as the current cart design was uniform across desktop and mobile (no scaling). This led to the first discovery: <span style = "background-color: #f8ede7">The shopping cart may be causing friction among users, especially those on mobile.</span> Overall, we would want to boost conversion on both mobile and desktop, but give more emphasis to a mobile-first design, as the majority of our shoppers were on mobile. </p>
+			</br>
+				<h5>Understanding Data- Qualititative</h5>
+				<p>Naturally, quantitative data has limitations. To further understand what issues may actually be causing users to abandon cart after investing time in adding items to cart, I dug into <strong>customer support tickets</strong>. Some common themes that occurred through my discussions with CX included:</p>
+				<p>1) Shoppers added a bra to their cart, but later decided the color wasn’t what they actually wanted. <span style = "background-color: #f8ede7">There was no easy way to edit colors of a certain style of bra within their cart.</span> Thus, shoppers had to resort to clicking out of the checkout page, return to the homepage, and search for the bra they wanted all over again. This took them out of the funnel (especially for first time buyers), and distracted them from completing the purchase.
+				</p>
+				<p>2) Shoppers easily got stuck on <span style = "background-color: #f8ede7">not knowing how to exit the cart nor edit/remove items from their cart, because they couldn’t find where to perform such actions</span>. Since the cart would flyout automatically upon each item add, shoppers often got stuck and couldn’t exit the cart. This in part had to do with the color palette used by ThirdLove, which did not have great contrast according to WCAG standards, and would be very faint on less high resolution/ smaller screens. </p>
+			</br>
+				<p> In addition, I also got new employees @ThirdLove to walk me through how they would navigate ThirdLove's shopping experience. This was particularly helpful-- by recording their interactions with the site on mobile in person, I was able to ask follow up questions on points where they got stuck and create a wishlist of features they desired. </p>
+			</br>
+				<p> Below, I've distilled my findings from both qualitative and quantitative research into a flowchart, with the major <strong>friction points</strong> highlighted. With 8+ friction points, this experience definitely could be improved.</p>
+
+			</div>
+		</div>
+
+		<div style="text-align: center;">
+			<img width ="100%" src="images/uxportfolio/shoppingcart/conversionflow.jpg"/>
+		</div>
+
 		<div style="text-align: center; padding-top:2%">
 			<div style="display: inline-block; text-align: left;">
 				<h5>Current Cart Evaluation</h5>
-				<p>To start off the redesign process, I attempted to understand the problem at hand through two main ways: 1) going through customer support tickets and 2) evaluating our cart against competitor carts. Below, I've highlighted a couple of key findings. From the customer support side, two common complaints resurfaced again and again: the inability to easily exit the cart, and the difficulty in editing cart items. </p>
+				<p>After gathering data on what the perceived problem was, I attempted to understand the shortcomings of the current cart through performing a heuristic evaluation of ThirdLove's existing cart, and also researched what UI patterns forward thinking e-commerce sites employed for a friction-less shopping experience. Below, I've highlighted a couple of design inconsistencies in ThirdLove's old cart.</p>
 			</div>
 		</div>
 		<div style="text-align: center;">
@@ -140,7 +180,7 @@
 		</div>
 		<div style="text-align: center; padding-top:2%">
 			<div style="display: inline-block; text-align: left;">
-				<h5>A/B Testing Icons</h5>
+				<h5>Improving Accessibility- A/B Testing Icons</h5>
 				<p>To run a low level test to see whether a visual uplift would help with conversion, I ran A/B tests on whether the shopping cart icon itself contributed to clickthrough rate. Here are a couple of iterations on the icons I created. </p>
 			</div>
 		</div>
@@ -149,7 +189,7 @@
 		</div>
 		<div style="text-align: center;">
 			<div style="display: inline-block; text-align: left;">
-				<h5>Low Fideltiy Wireframes</h5>
+				<h5>Determining Information Hierarchy- Low Fidelity Wireframes</h5>
 				<p>To help determine the hierarchy of content, I used low fidelity wireframes to place in the blocks of content. I also iterated upon the hierarchy of each individual list item, which you can see below.  </p>
 			</div>
 		</div>
@@ -159,13 +199,22 @@
 		</div>
 		<div style="text-align: center;">
 			<div style="display: inline-block; text-align: left;">
-				<h5>Final Prototype</h5>
-				<p>After testing extensively both internally (with new employees) and externally (validately), I was able to come up with the final design. I've called out the key screens below. </p>
+				<h5>Prototyping and Iterating</h5>
+				<p>I deployed prototypes for both internal and external user testing. Internally, I worked with new employees to iterate quickly upon my first couple of low fidelity prototypes, eventually moving into higher fidelity mocks and improving upon each feedback session. I eventually brought this to an external panel of 8 users, who performed a series of tasks while their mobile screens were recorded through Validately. The full user testing script is available <a href="https://paper.dropbox.com/doc/User-Testing-pE2Vkg14eTgUNfLvIVfNu">here</a>.</p>
 			</div>
 		</div>
+
+		<div style="text-align: center; padding-top:2%">
+			<<img width ="70%" src="images/uxportfolio/shoppingcart/redesign.jpg"/>
+		</div>
+
 		<div style="text-align: center;">
-			<img width ="70%" src="images/uxportfolio/shoppingcart/redesign.jpg"/>
-		</br>
+			<div style="display: inline-block; text-align: left;">
+				<p>The final design came to being after numerous iterations upon each user test, a pixel perfect review with my mentor, and engineering scoping of feasibility with both engineer leads and Product Managers at ThirdLove. I've included a video of a walkthrough of key actions that could be taken from the cart. The full InVision prototype is available <a href=" https://invis.io/5MCOMQYCU">here</a>. </p>
+			</div>
+		</div>
+
+		<div style="text-align: center;">
 			<video class="mobile" style="margin-top: 4%"class="myvid"  width="100%" autoplay controls loop>
 					<source src="images/uxportfolio/shoppingcart/cart.mp4" type="video/mp4" >
 			</video>
@@ -176,7 +225,7 @@
 			<div style="display: inline-block; text-align: left; padding-top:5%">
 				<h5>Closing Thoughts</h5>
 				<p>This was only my first project of the summer, but I've already learned so much about pixel precision and working in an e-commerce startup. This project will be pushed into production in the next couple of weeks, but for now, I'm working on some more exciting projects! </p>
-				<p>I've also linked my interview design challenge <a href="thirdlove.html">here</a>. Feel free to contact me for more details on what I'm working on this summer!
+				<p>I've also linked my interview design challenge <a href="thirdlove.html">here</a>. Feel free to contact me for more details on what else I'm working on this summer!
 				</br>
 			</br>
 			</div>
