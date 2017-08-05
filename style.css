@@ -421,7 +421,11 @@ div.panel h2{
       margin-top:7%;
     }
     .desktop{
-      width: 55%;
+      width: 85%;
+    }
+
+    .disney{
+      width:70%;
     }
 
     .mobile{
@@ -445,6 +449,10 @@ div.panel h2{
     .desktop{
       width:70%;
     }
+
+    .disney{
+      width:60%;
+    }
     .mobile{
       width:40%;
     }
@@ -454,6 +462,10 @@ div.panel h2{
       margin-top:20%;
     }
     .desktop{
+      width:90%;
+    }
+
+    .disney{
       width:90%;
     }
     .mobile{
