@@ -183,6 +183,7 @@
 		<h5>Design Process</h5>
 		<p>Given these three very different personas, I started thinking about how I could augment Venmo’s current charge/pay feature to allow for a streamlined split the bill action, and provide an immediate, easy way to complete the transactions at the dining table. From my discussions with my friends over the course of at least 10 dinners, I found that the majority of people preferred to pay/charge immediately, to lessen the possibility of forgetting their dues later. I also designed primarily for the mobile app (on iOS), as this was meant to be a quick and simple way to split the bill at the table, at restaurants where most receipts are printed (rather than handwritten). </p>
 		<p>I employed a brute force methodology over the course of 3 days to design and iterate quickly upon ideas. After each stage of fidelity (sometimes multiple times within one round), I sent it out to my friends to gather feedback and make changes. </p>
+		<p>For the most part, I adopted <a href= "http://brand.venmo.com/styleguide"> Venmo's style guide</a>, and made a couple of small modifications in UI patterns to better incorporate the concept of groups within Venmo.</p>
 	</div>
 </div>
 
@@ -190,13 +191,24 @@
 	<img width ="100%" src="images/uxportfolio/venmo/explorations.jpg"/>
 </div>
 
+<div style="text-align: center; padding-top:2%">
+	<div style="display: inline-block; text-align: left;">
+		<p>Some questions that I explored during the initial sketching stage included: whether matching an order to a person made more sense, or matching a person to an order; whether there should be a 'blocker' so that group charges were distinguished from individual pay/requests, and how to indicate the existence of previous groups.</p>
+	</div>
+</div>
+
 <div style="text-align: center;">
 	<img width ="100%" src="images/uxportfolio/venmo/explorations2.jpg"/>
 </div>
 
-
 <div style="text-align: center;">
 	<img width ="100%" src="images/uxportfolio/venmo/explorations3.jpg"/>
+</div>
+
+<div style="text-align: center; padding-top:2%">
+	<div style="display: inline-block; text-align: left;">
+		<p>Moving into higher fidelity, I explored different button styles, toggles between group and individual, and placement of the 'tray of people'. I also thought about how to incorporate shortcuts for splitting amongst the entire group, and how to visualize split evenly while keeping a record of the charges.</p>
+	</div>
 </div>
 
 <div style="text-align: center; padding-top:2%">
@@ -212,8 +224,14 @@
 
 <div style="text-align: center; padding-top:2%">
 	<div style="display: inline-block; text-align: left;">
-		<h5>Iterating > V2</h5>
-		<p>Given the first round of feedback, I brought in motion to further validate my concepts. You can see a complete demo walkthrough below, as well as key actions separated out: initiating a group, scanning a receipt, splitting evenly, verifying receipt items, assigning items, and sending charges..</p>
+		<p>During this round of feedback, the group creation process, splitting singular items and hierarchy of secondary actions such as adding tip were debated. Thanks to some insightful feedback, I made modifications to the flow as well as the UI on the last two screens, before going into the next stage.</p>
+	</div>
+</div>
+
+<div style="text-align: center; padding-top:2%">
+	<div style="display: inline-block; text-align: left;">
+		<h5>V2 Prototype + Motion</h5>
+		<p>Given the first round of feedback, I brought in motion to further validate my concepts, as the drag and drop was a key characteristic of my design. Here's a complete walkthrough of the flow a user would take upon initiating a split bill action. I tried to draw parallels to the current venmo initiate a charge/payment, so that it would feel native to the Venmo app.</p>
 	</div>
 </div>
 
@@ -222,6 +240,12 @@
 		<source src="images/uxportfolio/venmo/venmo.mp4" type="video/mp4" >
 		</video>
 	</br>
+</div>
+<div style="text-align: center; padding-top:2%">
+	<div style="display: inline-block; text-align: left;">
+		<h5>Key Interactions</h5>
+		<p>In the following three videos, I've broken down the key actions: Creating a Group, Scan Receipt, and Split Evenly. Based on the feedback from round 1, I decided to go with a more intuitive "create group", so that once more names were typed, the CTA would automatically transform into group-relevant CTAs, and the user would not have to switch between group-individual through an additional tap. For scanning receipt, I added in an indicator light so as to clarify when list items were aligned properly. In Split Evenly, I opted to hide the components that allowed for drag and drop, so that users could maintain a record of the receipt but still charge evenly.</p>
+	</div>
 </div>
 <div style="text-align: center;">
 	<video class="mobile" style="margin-top: 4%; padding: 30px;"class="myvid"  width="100%" autoplay controls loop>
@@ -236,6 +260,12 @@
 
 
 			</br>
+		</div>
+
+		<div style="text-align: center; padding-top:2%">
+			<div style="display: inline-block; text-align: left;">
+				<p>In the next three videos, I've broken down the key actions of: Editing a scanned charge, assigning people to items, and changing the tip percentage before charging. Since OCR is not the most reliable technology, I thought it'd be best to safeguard against wrongful scanning by allowing for editing capabilities. In the drag and drop assign feature, users are able to easily split one item amongst multiple people, and keep track of number of dishes per person in the bottom tray. For tipping, I decided against a slider, instead opting for a tiered tipping system with a custom field, so that the most common percentages could easily be pulled and changed (default to 15%).</p>
+			</div>
 		</div>
 		<div style="text-align: center;">
 			<video class="mobile" style="margin-top: 2%; padding: 30px;"class="myvid"  width="100%" autoplay controls loop>
