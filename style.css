@@ -433,7 +433,9 @@ div.panel h2{
     .mobile{
       width: 20%;
     }
-
+    .covers{
+      padding-top:5%;
+    }
 
 }
 
