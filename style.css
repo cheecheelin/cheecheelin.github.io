@@ -442,6 +442,9 @@ div.panel h2{
     #chee{
       margin-top:9%;
     }
+    .covers{
+      padding-top:10%;
+    }
 }
 
 @media (max-width: 800px) {
@@ -457,6 +460,9 @@ div.panel h2{
     }
     .mobile{
       width:40%;
+    }
+    .covers{
+      padding-top:15%;
     }
 }
 @media (max-width: 550px) {
@@ -474,7 +480,7 @@ div.panel h2{
       width:50%;
     }
     .covers{
-      padding-top:25%;
+      padding-top:20%;
     }
 
 }
@@ -490,6 +496,9 @@ div.panel h2{
       width:70%;
     }
     #aboutphoto{
+      padding-top:25%;
+    }
+    .covers{
       padding-top:25%;
     }
 }
