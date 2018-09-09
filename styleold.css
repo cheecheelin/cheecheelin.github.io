@@ -11,8 +11,6 @@
 }
 .navbar-default .navbar-collapse{
   border-color: #FFFFFF;
-  font-family: "Karla", sans-serif;
-  padding-top:1%;
 }
 
 .navbar-toggle{
@@ -20,13 +18,18 @@
   margin-bottom:6%;
 }
 
+/* if i use svg logo instead of text*/
+/* .navbar-brand{
+  padding: 0px 30px 0px 50px;
+} */
 
 .navbar-brand{
-  /*font-size: 36px; /*36px;*/
+  font-size: 24px; /*36px;*/
   font-weight:600;
-  padding-top: 2%;
+  padding: 20px 20px;
   padding-left: 40%;
   height:50px;
+  font-family: "Karla",sans-serif;
   letter-spacing:2px;
 }
 
@@ -68,24 +71,70 @@ body {
 
 h1{
   color:#1a1a1a;
-  font-family: "Merriweather", serif;
-  font-size: 84px;
+  font-family: "Karla", sans-serif;
+  font-size: 36px;
   font-weight: bold;
-  padding-top: 16%;
-  padding-left: 10%;
+  padding-top: 2%;
 }
 
 h2{
   color: #1a1a1a;
   font-family: "Karla", sans-serif;
-  font-size:20px;
+  font-size:16px;
   max-width: 820px;
-  text-align: left;
+  margin: 0 auto;
+  text-align: center;
   line-height: 1.5em;
   padding-left: 10%;
-  padding-right: 8%;
+  padding-right: 10%;
 }
 
+h6{
+  color: #1a1a1a;
+  font-family: "Karla", sans-serif;
+  font-size:16px;
+  line-height: 1.5em;
+}
+
+h3{
+  font-family: "Karla", sans-serif;
+  font-size:16px;
+  padding-left:50px;
+  font-weight: normal;
+}
+
+h4{
+  /*same as h1, but using h4-h6 for project template */
+  color:#253238;
+  font-family: "Karla", sans-serif;
+  font-size: 36px;
+  padding-left: 2%;
+  padding-right: 2%;
+  padding-top: 0%;
+  padding-bottom: 2%;
+  font-weight: bold;
+}
+
+h5{
+  /*same as h1, but using h4-h6 for project template */
+  color:#253238;
+  font-family: "Karla", sans-serif;
+  font-size: 24px;
+  padding-top: 0%;
+  padding-bottom: 2%;
+  padding-left: 5%;
+  padding-right: 5%;
+  font-weight: bold;
+}
+
+h6{
+  /*same as h2 but using p for project template */
+  color: #1a1a1a;
+  font-family: "Karla", sans-serif;
+  font-size:24px;
+  line-height: 1.5em;
+  margin-bottom: 2%;
+}
 
 .tags{
   background-color: #d3d3d3;
@@ -108,7 +157,7 @@ h2{
 .button{
    background-color: #253238;
    border: solid;
-   border-radius: 25px;
+   border-radius: 20px;
    border-color: #253238;
    border-width:2px;
    color: #fff;
@@ -233,23 +282,23 @@ p{
 .social-icon i{
   padding: 10px;
   color: black;
-  font-size: 1.6em;
+  font-size: 1.4em;
 }
 
 .social-icon i:hover{
   transform:scale(1.4);
-  color: #4169E1;
+  color: #D25F66;
 }
 
 /* for links in introduction section */
 a{
-  color: #4169E1;
+  color: black;
   font-weight: bold;
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 a:hover {
-  color: #4169E1;
+  color: #D25F66;
 }
 
 a:active {
