@@ -10,7 +10,7 @@
   /* position: fixed; */
 }
 .navbar-default .navbar-collapse{
-  border-color: #FFFFFF;
+  border-color: #FFF;
   font-family: "Karla", sans-serif;
   padding-top:1%;
 }
@@ -28,6 +28,7 @@
   padding-left: 40%;
   height:50px;
   letter-spacing:2px;
+  z-index: 200;
 }
 
 /*changing color of font of name */
@@ -46,7 +47,7 @@
 
 /*changing color of menu button*/
 .navbar-default .navbar-toggle {
-    border-color: #FFFFFF;
+    border-color: #FFF;
 }
 
 /* .navbar-default .navbar-toggle .icon-bar {
@@ -87,18 +88,7 @@ h2{
 }
 
 
-.tags{
-  background-color: #d3d3d3;
-  border: none;
-  border-radius: 20px;
-  color: #253238;
-  padding: 5px 20px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 12px;
-  margin: 5px 5px 15px 5px;
-}
+
 
 .hpdescription{
   text-align: center;
@@ -151,28 +141,7 @@ h2{
   text-decoration: none;
 }
 
-.button3{
-   background-color: white;
-   border: solid;
-   border-radius: 20px;
-   border-color: #253238;
-   border-width:2px;
-   color: #253238;
-   padding: 5px 20px;
-   text-align: center;
-   text-decoration: none;
-   display: inline-block;
-   font-size: 16px;
-   margin: 4px 0px;
-   cursor: pointer;
-   width: 200px;
-}
 
-.button3:hover{
-  background-color: #253238;
-  color: #FFFFFF;
-  text-decoration: none;
-}
 
 /*linebreak styling */
 .newsection{
@@ -374,20 +343,7 @@ div.panel h2{
     #chee{
       margin-top:7%;
     }
-    .desktop{
-      width: 85%;
-    }
 
-    .disney{
-      width:50%;
-    }
-
-    .mobile{
-      width: 20%;
-    }
-    .covers{
-      padding-top:5%;
-    }
 
 }
 
@@ -396,46 +352,25 @@ div.panel h2{
     #chee{
       margin-top:9%;
     }
-    .covers{
-      padding-top:10%;
-    }
+
 }
 
 @media (max-width: 800px) {
     #chee{
       margin-top:12%;
     }
-    .desktop{
-      width:70%;
-    }
 
-    .disney{
-      width:60%;
-    }
-    .mobile{
-      width:40%;
-    }
-    .covers{
-      padding-top:15%;
-    }
 }
 @media (max-width: 550px) {
     #chee{
       margin-top:20%;
     }
-    .desktop{
-      width:90%;
+    h1{
+      font-size: 72px;
+      padding-top: 20%;
+      padding-left: 8%;
     }
 
-    .disney{
-      width:90%;
-    }
-    .mobile{
-      width:50%;
-    }
-    .covers{
-      padding-top:20%;
-    }
 
 }
 
@@ -443,73 +378,25 @@ div.panel h2{
     #chee{
       margin-top:25%;
     }
-    .desktop{
-      width:90%;
+    h1{
+      font-size: 64px;
+      padding-top: 20%;
+      padding-left: 10%;
     }
-    .mobile{
-      width:70%;
+
+    h2{
+      font-size:18px;
     }
-    #aboutphoto{
-      padding-top:25%;
-    }
-    .covers{
-      padding-top:25%;
-    }
+
+
+
 }
 
 
 
 
-/* @media (max-width: 550px){
-  .img-square{
-    width:350px;
-    height:350px;
-  }
-  #hello{
-    padding-top:30px;
-    padding-left:0%;
-    display: block;
-    margin: 0 auto;
-    float: none;
-  }
-  #sayhi{
-    padding-left: 0px;
-    text-align: center;
-  }
-} */
 
 
-
-/*
-.indentsections{
-  padding-top:30px;
-  padding-left:20px;
-}
-
-.quote {
-  font-size:13px;
-  color: #4A4A4A;
-}
-
-.caption{
-  margin-bottom:0px;
-  text-align:center;
-}
-.projectimage-half img{
-  padding-top:20px;
-  width: 45%;
-}
-.projectimage-half{
-  display: inline-block;
-  padding-left:60px;
-}
-*/
-
-/* alert message temporary under construction */
-.alert {
-  margin-top: 20px;
-  text-align: center;
-}
 
 /* adding in slideshow */
 .mySlides {display:none;}
