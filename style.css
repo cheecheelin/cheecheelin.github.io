@@ -1,62 +1,7 @@
-/* navbar styling */
-.navbar{
-  background-color: #FFFFFF;
-  border: none !important;
-  border-width: 0px;
-  padding-bottom: 0px;
-  width: 100%;
-  padding-top:0;
-  z-index:100;
-  /* position: fixed; */
-}
-.navbar-default .navbar-collapse{
-  border-color: #FFF;
-  font-family: "Karla", sans-serif;
-  padding-top:1%;
-}
 
-.navbar-toggle{
-  margin-top:6%;
-  margin-bottom:6%;
-}
-
-
-.navbar-brand{
-  /*font-size: 36px; /*36px;*/
-  font-weight:600;
-  padding-top: 2%;
-  padding-left: 40%;
-  height:50px;
-  letter-spacing:2px;
-  z-index: 200;
-}
-
-/*changing color of font of name */
-.navbar-default .navbar-brand {
-    color: #333;
-}
-
-.navbar-right {
-  padding: 15px 50px 20px 30px;
-  font-size: 18px;
-}
-/*changing color of links to dark gray*/
-.navbar-default .navbar-nav>li>a {
-    color: #333;
-}
-
-/*changing color of menu button*/
-.navbar-default .navbar-toggle {
-    border-color: #FFF;
-}
-
-/* .navbar-default .navbar-toggle .icon-bar {
-    background-color: #333;
-} */
 
 body {
-  padding-top: 0px;
-  font-family: "Karla", sans-serif;
+  font-family: "Inconsolata", sans-serif;
   position: relative;
   border: none !important;
 }
@@ -67,236 +12,27 @@ body {
   background-color: #fff;
 }
 
-h1{
-  color:#1a1a1a;
-  font-family: "Merriweather", serif;
-  font-size: 84px;
-  font-weight: bold;
-  padding-top: 16%;
-  padding-left: 10%;
-}
 
-h2{
-  color: #1a1a1a;
-  font-family: "Karla", sans-serif;
-  font-size:20px;
-  max-width: 900px;
-  text-align: left;
-  line-height: 1.5em;
-  padding-left: 10%;
-  padding-right: 8%;
-}
-
-
-
-
-.hpdescription{
-  text-align: center;
-  margin: 0 auto;
-  margin-bottom: 1%;
-}
-.button{
-   background-color: #253238;
-   border: solid;
-   border-radius: 25px;
-   border-color: #253238;
-   border-width:2px;
-   color: #fff;
-   padding: 5px 20px;
-   text-align: center;
-   text-decoration: none;
-   display: inline-block;
-   font-size: 16px;
-   margin: 4px 0px;
-   cursor: pointer;
-}
-
-
-
-.button:hover{
-  background-color: #253238;
-  color: white;
-  text-decoration: none;
-}
-
-.button2{
-   background-color: white;
-   border: solid;
-   border-radius: 20px;
-   border-color: #253238;
-   border-width:2px;
-   color: #253238;
-   padding: 5px 20px;
-   text-align: center;
-   text-decoration: none;
-   display: inline-block;
-   font-size: 16px;
-   margin: 4px 0px;
-   cursor: pointer;
-}
-
-.button2:hover{
-  background-color: #253238;
-  color: #FFFFFF;
-  text-decoration: none;
-}
-
-
-
-/*linebreak styling */
-.newsection{
-  width:75%;
-  height: 12px;
-  border-bottom: 2px solid #253238;
-  text-align: left;
-  margin: 0 auto;
-  text-transform:uppercase;
-  font-weight: bold;
-}
-
-.hpcontent{
-  width: 100%;
-  text-align:center;
-  display: inline-block;
-  padding-top: 3%;
-}
-
-.projdivider{
-  width: 65%;
-  margin-top: 4%;
-}
-
-footer {
-    margin: 2% auto;
-    background-color: white;
-    text-align: center;
-    height:10px;
-}
-
-
-
-
-p{
-  /*same as h2 but using p for project template */
-  color: #1a1a1a;
-  font-family: "Karla", sans-serif;
-  font-size:16px;
-  max-width: 700px;
+#chee{
   padding-left: 5%;
-  padding-right: 5%;
-  line-height: 1.5em;
-}
-#mysocial{
-  padding-top:20px;
-  padding-left:0px;
-
-}
-#mysocial li{
-    display: inline-block;
-}
-
-.social-icon li a{
-  text-decoration: none;
-}
-
-.social-icon i{
-  padding: 10px;
-  color: black;
-  font-size: 1.6em;
-}
-
-.social-icon i:hover{
-  transform:scale(1.4);
-  color: #4169E1;
-}
-
-/* for links in introduction section */
-a{
-  color: #4169E1;
-  font-weight: bold;
-  text-decoration: none;
-}
-
-a:hover {
-  color: #4169E1;
-}
-
-a:active {
-  color: #D25F66;
-}
-a:visited {
-  color: black;
-}
-
-
-h3 a:visited{
-  color: black;
-}
-
-/* testing out an accordion about section */
-a.accordion {
-    background-color: #FFF;
-    color: #444;
-    cursor: pointer;
-    padding: 18px;
-    width: 100%;
-    border: none;
-    text-align: left;
-    outline: none;
-    font-size: inherit;
-    transition: 0.4s;
-}
-
-a.accordion:after {
-    content: '\002B';
-    color: #000;
-    font-weight: bold;
-    float: right;
-    margin-left: 5px;
-}
-
-a.accordion.active:after {
-    content: "\2212";
-    color: #D25F66;
-    font-size: 1.2em;
-}
-
-div.panel {
-    padding-left: 0px;
-    padding-top: 20px;
-    background-color: white !important;
-    border-top-color: red;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.5s ease-out;
-
-}
-
-div.panel h2{
-  color: black;
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-
-#expandthis{
-  padding-top: 0px;
-  padding-bottom: 0px;
-  border: none !important;
-  background-color: white !important;
-  outline: none;
-}
-
-#fixline{
-  margin-top:12px;
-}
-
-#ux{
   padding-top:5%;
 }
 
-.projectimage img{
-  width: 50%;
+#intro {
+  line-height: 2em;
+  padding-top: 5%;
 }
+
+
+a{
+  color: #1a1a1a;
+}
+
+
+
+
+
+
 
 
 
@@ -340,9 +76,6 @@ div.panel h2{
 
 
 @media (max-width: 9000px) {
-    #chee{
-      margin-top:7%;
-    }
 
 
 }
@@ -350,58 +83,23 @@ div.panel h2{
 
 @media (max-width: 1200px) {
     #chee{
-      margin-top:9%;
+      margin-top:2%;
     }
 
 }
 
 @media (max-width: 800px) {
-    #chee{
-      margin-top:12%;
-    }
+
 
 }
 @media (max-width: 550px) {
-    #chee{
-      margin-top:20%;
-    }
-    h1{
-      font-size: 72px;
-      padding-top: 20%;
-      padding-left: 8%;
-    }
 
 
 }
 
 @media (max-width: 375px) {
-    #chee{
-      margin-top:25%;
-    }
-    h1{
-      font-size: 64px;
-      padding-top: 20%;
-      padding-left: 10%;
-    }
-
-    h2{
-      font-size:18px;
-    }
-
-
-
-}
 
 
 
 
-
-
-
-/* adding in slideshow */
-.mySlides {display:none;}
-
-.myvid{
-  margin: 5%;
-  box-shadow: -1px 1px 5px #888;
 }
