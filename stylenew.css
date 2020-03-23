@@ -1,0 +1,44 @@
+/* general styling begins here -->
+*/
+
+/* html {
+  font-family: "Lucida Sans", sans-serif;
+} */
+
+
+.topnav{
+  font-family: 'Helvetica', sans-serif;
+  font-size: 32px;
+  font-weight: bold;
+  padding: 3%;
+}
+
+.topnav a{
+  text-decoration: none;
+  color: black;
+  padding: 10px;
+}
+
+.topnav-right {
+  float: right;
+}
+
+
+.intro{
+    padding-left: 30%;
+    padding-right: 12%;
+    padding-top:2%;
+    font-family: 'Helvetica', sans-serif;
+    font-weight: bold;
+    font-size: 80px;
+}
+
+@media only screen and (max-width: 720px) {
+  .topnav{
+    font-size:24px;
+  }
+  .intro{
+    padding-left: 10%;
+    font-size: 40rpx;
+  }
+}

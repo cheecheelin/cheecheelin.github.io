@@ -1,0 +1,139 @@
+
+
+body {
+  font-family: "PT Mono", sans-serif;
+  position: relative;
+  border: none !important;
+}
+.text-center {
+  padding-top: 20px;
+}
+.col-xs-12 {
+  background-color: #fff;
+}
+
+
+#chee{
+  padding-left: 20%;
+  padding-top:20%;
+  font-size: 12px;
+}
+
+#intro {
+  line-height: 2em;
+  padding-top: 5%;
+}
+
+
+a{
+  color: #1a1a1a;
+}
+
+
+
+/*SIDENAV */
+
+.sidenav {
+  height: 100%; /* Full-height: remove this if you want "auto" height */
+  width: 400px; /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #fff; /* Black */
+  overflow-x: hidden; /* Disable horizontal scroll */
+}
+
+/* The navigation menu links */
+.sidenav a {
+  text-decoration: none;
+  color: #818181;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+/* Style page content */
+.main {
+  margin-left: 160px; /* Same as the width of the sidebar */
+  padding: 10% 10%;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+
+
+
+/* collapsible */
+@media screen and (max-width: 767px) {
+  .row-offcanvas {
+    position: relative;
+    -webkit-transition: all 0.25s ease-out;
+    -moz-transition: all 0.25s ease-out;
+    transition: all 0.25s ease-out;
+  }
+  .row-offcanvas-right
+  .sidebar-offcanvas {
+    right: -41.6%;
+  }
+
+  .row-offcanvas-left
+  .sidebar-offcanvas {
+    left: -41.6%;
+  }
+  .row-offcanvas-right.active {
+    right: 41.6%;
+  }
+  .row-offcanvas-left.active {
+    left: 41.6%;
+  }
+  .sidebar-offcanvas {
+    position: absolute;
+    top: 0;
+    width: 41.6%;
+  }
+  #sidebar {
+    padding-top:0;
+  }
+}
+
+
+
+
+
+
+
+@media (max-width: 9000px) {
+
+
+}
+
+
+@media (max-width: 1200px) {
+    #chee{
+      margin-top:2%;
+    }
+
+}
+
+@media (max-width: 800px) {
+
+
+}
+@media (max-width: 550px) {
+
+
+}
+
+@media (max-width: 375px) {
+
+
+
+
+}
