@@ -19,8 +19,9 @@ h1{
   font-family: "Merriweather", serif;
   font-size: 60px;
   font-weight: 700;
-  padding-top: 14%;
+  padding-top: 15%;
   padding-left: 10%;
+  letter-spacing: 1px;
 }
 
 h2{
