@@ -1,44 +1,187 @@
-/* general styling begins here -->
-*/
-
-/* html {
-  font-family: "Lucida Sans", sans-serif;
-} */
 
 
-.topnav{
-  font-family: 'Helvetica', sans-serif;
-  font-size: 32px;
-  font-weight: bold;
-  padding: 3%;
+
+body {
+  padding-top: 0px;
+  font-family: "Karla", sans-serif;
+  position: relative;
+  border: none !important;
+}
+.text-center {
+  padding-top: 20px;
+}
+.col-xs-12 {
+  background-color: #fff;
 }
 
-.topnav a{
+h1{
+  color:#1a1a1a;
+  font-family: "Merriweather", serif;
+  font-size: 60px;
+  font-weight: 700;
+  padding-top: 14%;
+  padding-left: 10%;
+}
+
+h2{
+  color: #1a1a1a;
+  font-family: "Lato", sans-serif;
+  font-size:20px;
+  font-weight: 400;
+  max-width: 720px;
+  text-align: left;
+  line-height: 1.5em;
+  padding-left: 10%;
+  padding-right: 8%;
+}
+
+img {
+  pointer-events: none;
+}
+
+
+p{
+  /*same as h2 but using p for project template */
+  color: #1a1a1a;
+  font-family: "Open Sans", sans-serif;
+  font-size:16px;
+  font-weight: 300;
+  max-width: 600px;
+  padding-left: 5%;
+  padding-right: 5%;
+  line-height: 1.5em;
+}
+#mysocial{
+  padding-top:32px;
+  padding-left:0px;
+
+}
+#mysocial li{
+    display: inline-block;
+}
+
+.social-icon li a{
   text-decoration: none;
-  color: black;
+}
+
+.social-icon i{
   padding: 10px;
+  color: black;
+  font-size: 1.5em;
 }
 
-.topnav-right {
-  float: right;
+.social-icon i:hover{
+  transform:scale(1.1);
+  color: #484848;
+}
+
+/* for links in introduction section */
+a{
+  color: black;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: #484848;
+}
+
+a:active {
+  color: #484848;
+}
+a:visited {
+  color: black;
 }
 
 
-.intro{
-    padding-left: 30%;
-    padding-right: 12%;
-    padding-top:2%;
-    font-family: 'Helvetica', sans-serif;
-    font-weight: bold;
-    font-size: 80px;
-}
 
-@media only screen and (max-width: 720px) {
-  .topnav{
-    font-size:24px;
+/* collapsible */
+@media screen and (max-width: 767px) {
+  .row-offcanvas {
+    position: relative;
+    -webkit-transition: all 0.25s ease-out;
+    -moz-transition: all 0.25s ease-out;
+    transition: all 0.25s ease-out;
   }
-  .intro{
-    padding-left: 10%;
-    font-size: 40px;
+  .row-offcanvas-right
+  .sidebar-offcanvas {
+    right: -41.6%;
   }
+
+  .row-offcanvas-left
+  .sidebar-offcanvas {
+    left: -41.6%;
+  }
+  .row-offcanvas-right.active {
+    right: 41.6%;
+  }
+  .row-offcanvas-left.active {
+    left: 41.6%;
+  }
+  .sidebar-offcanvas {
+    position: absolute;
+    top: 0;
+    width: 41.6%;
+  }
+  #sidebar {
+    padding-top:0;
+  }
+}
+
+
+
+
+
+
+
+@media (max-width: 9000px) {
+    #chee{
+      margin-top:7%;
+    }
+
+
+}
+
+
+@media (max-width: 1200px) {
+    #chee{
+      margin-top:9%;
+    }
+
+}
+
+@media (max-width: 800px) {
+    #chee{
+      margin-top:12%;
+    }
+
+}
+@media (max-width: 550px) {
+    #chee{
+      margin-top:20%;
+    }
+    h1{
+      font-size: 64px;
+      padding-top: 20%;
+      padding-left: 8%;
+    }
+
+
+}
+
+@media (max-width: 375px) {
+    #chee{
+      margin-top:25%;
+    }
+    h1{
+      font-size: 48px;
+      padding-top: 20%;
+      padding-left: 10%;
+    }
+
+    h2{
+      font-size:18px;
+    }
+
+
+
 }
