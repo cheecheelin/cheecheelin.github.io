@@ -16,12 +16,12 @@ body {
 
 h1{
   color:#1a1a1a;
-  font-family: "Merriweather", serif;
-  font-size: 60px;
+  font-family: 'Abril Fatface', cursive;
+  font-size: 64px;
   font-weight: 700;
   padding-top: 15%;
   padding-left: 10%;
-  letter-spacing: 1px;
+  letter-spacing:4px;
 }
 
 h2{
